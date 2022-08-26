@@ -19,11 +19,13 @@ class QuestionViewController: UIViewController {
         view.backgroundColor = .white
 
     }
-    
+
     func loadItems() {
         if let questionItems = selectedCategory?.items.sorted(byKeyPath: "question", ascending: true) {
-            print("heheheh\(questionItems)")
-            print(questionItems[0].question)
+            print(questionItems)
+            print("HEJO")
+            print(questionItems.randomElement())
+            
         }
         configureTitleLabel()
         configureStackView()
@@ -32,7 +34,7 @@ class QuestionViewController: UIViewController {
     func getQuestionText() -> String {
         if let questionItems = selectedCategory?.items.sorted(byKeyPath: "question", ascending: true) {
             return questionItems[0].question
-            print(questionItems[0].question)
+//            print(questionItems[0].question)
         }
         return "jiji"
     }

@@ -6,6 +6,7 @@ class ViewController: UIViewController {
     
     let realm = try! Realm()
     var categories: Results<Category>?
+    var questions: Results<Question>?
     var selectedCategory: Category?
     var titleLabel = UILabel()
     var categoryStackView = UIStackView()
@@ -13,12 +14,53 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         print(Realm.Configuration.defaultConfiguration)
         view.backgroundColor = .systemRed
-        title = "Siemanochuj"
+        title = "Wybór kategorii"
         navigationController?.navigationBar.prefersLargeTitles = true
+        
         configureTitleLabel()
         configureStackView()
+ 
+        deleteData()
+        
+        let data = DataLoader().questionModel
+        
+        for object in data {
+            print(object)
+            let newQuestion = Question()
+            newQuestion.question = object.question
+            newQuestion.category = object.category
+            
+            for answers in object.answers {
+                let newAnswer = Answer()
+                newAnswer.title = answers.title
+                newAnswer.id = answers.id
+                newQuestion.answers.append(newAnswer)
+            }
+            self.saveData(question: newQuestion)
+        }
+    }
+    
+    private func deleteData() {
+        try! realm.write {
+            realm.deleteAll()
+        }
+    }
+    
+    private func saveData(question: Question) {
+        do {
+            try realm.write {
+                realm.add(question)
+            }
+        } catch {
+            print("Error saving question \(error)")
+        }
+    }
+    
+    func loadData() {
+        questions = realm.objects(Question.self)
     }
     
     private func addStackViewsToStackView() {
@@ -45,21 +87,17 @@ class ViewController: UIViewController {
     @objc func buttonClicked(sender: CategoryButton) {
         var buttonID: Int = 0
         if let text = sender.titleLabel!.text {
-            sender.tag
-            buttonID = getButtonID(text: text)
+            buttonID = sender.tag
             let results = realm.objects(Category.self).filter("name = '\(text)'")
             //            print("Button id is \(buttonID)")
             for index in getRandomNumbers(n: 5) {
                 //                print("Random results \(results[0].items[index])")
             }
         }
-        
         let questionVC = QuestionViewController()
-        //        questionVC.modalPresentationStyle = .fullScreen
         self.navigationController?.pushViewController(questionVC, animated: true)
-        //        self.present(questionVC, animated: true)
         print("BUTTON ID IS HEJ \(buttonID)")
-        questionVC.selectedCategory = categories?[0]
+        questionVC.selectedCategory = categories?[buttonID]
         
     }
     
@@ -73,33 +111,6 @@ class ViewController: UIViewController {
         return randomNumbers
     }
     
-    func getButtonID(text: String) -> Int {
-        var buttonID = 0
-        if text.contains("Pediatria") {
-            buttonID = 0
-        } else if text.contains("Chirurgia") {
-            buttonID = 1
-        } else if text.contains("Położnictwo") {
-            buttonID = 2
-        } else if text.contains("Medycyna rodzinna") {
-            buttonID = 3
-        } else if text.contains("Psychiatria") {
-            buttonID = 4
-        } else if text.contains("Medycyna ratunkowa") {
-            buttonID = 5
-        } else if text.contains("Bioetyka") {
-            buttonID = 6
-        } else if text.contains("Orzecnictwo") {
-            buttonID = 7
-        } else if text.contains("Zdrowie publiczne") {
-            buttonID = 8
-        } else if text.contains("Choroby wewnętrzne") {
-            buttonID = 9
-        } else {
-            print("Wrong buttonID")
-        }
-        return buttonID
-    }
     
     private func configureStackView(){
         view.addSubview(categoryStackView)
@@ -107,7 +118,7 @@ class ViewController: UIViewController {
         categoryStackView.axis = .vertical
         categoryStackView.distribution = .fillEqually
         categoryStackView.spacing = 2
-        addStackViewsToStackView()
+//        addStackViewsToStackView()
     }
     
     private func setStackViewConstraints() {

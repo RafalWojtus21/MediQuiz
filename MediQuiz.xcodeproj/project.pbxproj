@@ -10,7 +10,6 @@
 		8E78F04B28B6536E0030E5AA /* AnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78F04A28B6536E0030E5AA /* AnswerButton.swift */; };
 		8E90256728B4DECD0020D5A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E90256628B4DECD0020D5A1 /* AppDelegate.swift */; };
 		8E90256B28B4DECD0020D5A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E90256A28B4DECD0020D5A1 /* ViewController.swift */; };
-		8E90257128B4DECD0020D5A1 /* MediQuiz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E90256F28B4DECD0020D5A1 /* MediQuiz.xcdatamodeld */; };
 		8E90257328B4DED40020D5A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E90257228B4DED40020D5A1 /* Assets.xcassets */; };
 		8E90257628B4DED40020D5A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E90257428B4DED40020D5A1 /* LaunchScreen.storyboard */; };
 		8E90258428B54D940020D5A1 /* HorizontalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E90258328B54D940020D5A1 /* HorizontalStackView.swift */; };
@@ -21,6 +20,11 @@
 		8E90259528B560EB0020D5A1 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E90259428B560EB0020D5A1 /* QuestionViewController.swift */; };
 		8E90259728B5837F0020D5A1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E90259628B5837F0020D5A1 /* Category.swift */; };
 		8E90259928B5838C0020D5A1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E90259828B5838C0020D5A1 /* Item.swift */; };
+		8E99FB5E28B8C91D000B35D1 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E99FB5D28B8C91D000B35D1 /* Question.swift */; };
+		8E99FB6028B8CF31000B35D1 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E99FB5F28B8CF31000B35D1 /* Answer.swift */; };
+		8EB4DA1328B7F2FA009B2563 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB4DA1228B7F2FA009B2563 /* QuestionModel.swift */; };
+		8EB4DA1528B7F62F009B2563 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB4DA1428B7F62E009B2563 /* DataLoader.swift */; };
+		8EB4DA1928B7FF3D009B2563 /* categories_quiz.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EB4DA1828B7FF3D009B2563 /* categories_quiz.json */; };
 		E3AF727E6292C01A91DCD206 /* Pods_MediQuiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C16F86FAEEF437A7C1AB70C5 /* Pods_MediQuiz.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +34,6 @@
 		8E90256328B4DECD0020D5A1 /* MediQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E90256628B4DECD0020D5A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E90256A28B4DECD0020D5A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8E90257028B4DECD0020D5A1 /* MediQuiz.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MediQuiz.xcdatamodel; sourceTree = "<group>"; };
 		8E90257228B4DED40020D5A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E90257528B4DED40020D5A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E90257728B4DED40020D5A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,6 +45,11 @@
 		8E90259428B560EB0020D5A1 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		8E90259628B5837F0020D5A1 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		8E90259828B5838C0020D5A1 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		8E99FB5D28B8C91D000B35D1 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		8E99FB5F28B8CF31000B35D1 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		8EB4DA1228B7F2FA009B2563 /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		8EB4DA1428B7F62E009B2563 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		8EB4DA1828B7FF3D009B2563 /* categories_quiz.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = categories_quiz.json; sourceTree = SOURCE_ROOT; };
 		916AB2B39360241D704726C1 /* Pods-MediQuiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediQuiz.release.xcconfig"; path = "Target Support Files/Pods-MediQuiz/Pods-MediQuiz.release.xcconfig"; sourceTree = "<group>"; };
 		C16F86FAEEF437A7C1AB70C5 /* Pods_MediQuiz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediQuiz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -86,8 +94,8 @@
 				8E90257728B4DED40020D5A1 /* Info.plist */,
 				8E90257228B4DED40020D5A1 /* Assets.xcassets */,
 				8E90257428B4DED40020D5A1 /* LaunchScreen.storyboard */,
-				8E90256F28B4DECD0020D5A1 /* MediQuiz.xcdatamodeld */,
 				8E90258C28B5590B0020D5A1 /* Constants.swift */,
+				8EB4DA1828B7FF3D009B2563 /* categories_quiz.json */,
 			);
 			path = MediQuiz;
 			sourceTree = "<group>";
@@ -97,6 +105,9 @@
 			children = (
 				8E90259628B5837F0020D5A1 /* Category.swift */,
 				8E90259828B5838C0020D5A1 /* Item.swift */,
+				8EB4DA1228B7F2FA009B2563 /* QuestionModel.swift */,
+				8E99FB5D28B8C91D000B35D1 /* Question.swift */,
+				8E99FB5F28B8CF31000B35D1 /* Answer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -106,6 +117,7 @@
 			children = (
 				8E90256A28B4DECD0020D5A1 /* ViewController.swift */,
 				8E90259428B560EB0020D5A1 /* QuestionViewController.swift */,
+				8EB4DA1428B7F62E009B2563 /* DataLoader.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -201,6 +213,7 @@
 			files = (
 				8E90257628B4DED40020D5A1 /* LaunchScreen.storyboard in Resources */,
 				8E90257328B4DED40020D5A1 /* Assets.xcassets in Resources */,
+				8EB4DA1928B7FF3D009B2563 /* categories_quiz.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,13 +269,16 @@
 				8E90259928B5838C0020D5A1 /* Item.swift in Sources */,
 				8E90259128B55ADF0020D5A1 /* QuestionView.swift in Sources */,
 				8E90256B28B4DECD0020D5A1 /* ViewController.swift in Sources */,
+				8E99FB5E28B8C91D000B35D1 /* Question.swift in Sources */,
+				8EB4DA1328B7F2FA009B2563 /* QuestionModel.swift in Sources */,
 				8E90258F28B55A970020D5A1 /* MainView.swift in Sources */,
-				8E90257128B4DECD0020D5A1 /* MediQuiz.xcdatamodeld in Sources */,
 				8E90256728B4DECD0020D5A1 /* AppDelegate.swift in Sources */,
 				8E90258828B552030020D5A1 /* CategoryButton.swift in Sources */,
 				8E90258428B54D940020D5A1 /* HorizontalStackView.swift in Sources */,
 				8E90258D28B5590B0020D5A1 /* Constants.swift in Sources */,
+				8EB4DA1528B7F62F009B2563 /* DataLoader.swift in Sources */,
 				8E78F04B28B6536E0030E5AA /* AnswerButton.swift in Sources */,
+				8E99FB6028B8CF31000B35D1 /* Answer.swift in Sources */,
 				8E90259528B560EB0020D5A1 /* QuestionViewController.swift in Sources */,
 				8E90259728B5837F0020D5A1 /* Category.swift in Sources */,
 			);
@@ -474,19 +490,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		8E90256F28B4DECD0020D5A1 /* MediQuiz.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				8E90257028B4DECD0020D5A1 /* MediQuiz.xcdatamodel */,
-			);
-			currentVersion = 8E90257028B4DECD0020D5A1 /* MediQuiz.xcdatamodel */;
-			path = MediQuiz.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 8E90255B28B4DECD0020D5A1 /* Project object */;
 }

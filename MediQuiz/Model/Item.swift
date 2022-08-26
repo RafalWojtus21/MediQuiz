@@ -3,6 +3,7 @@ import RealmSwift
 
 class Item: Object {
     @objc dynamic var question: String = ""
+//    @objc dynamic var answers: [String] = []
     @objc dynamic var firstAnswer: String = ""
     @objc dynamic var secondAnswer: String = ""
     @objc dynamic var thirdAnswer: String = ""
