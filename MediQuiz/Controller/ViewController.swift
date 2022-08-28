@@ -34,7 +34,6 @@ class ViewController: UIViewController {
         return horizontalStackView
     }
     
-    
     private func createButton() -> CategoryButton {
         let button = CategoryButton()
         button.tag = 1

@@ -2,7 +2,7 @@ import Foundation
 
 public class DataLoader {
     
-    @Published var questionModel = [QuestionModel]()
+    var questionModel = [QuestionModel]()
     
     init() {
         load()

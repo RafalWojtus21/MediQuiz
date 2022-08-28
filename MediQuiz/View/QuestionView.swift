@@ -3,8 +3,9 @@ import UIKit
 
 class QuestionView: UIView {
     
-    var categoriesNames: [String]?
-
+    lazy var questionStackView: UIStackView = configureStackView()
+    lazy var questionLabel: UILabel = configureTitleLabel()
+    
     convenience init() {
         self.init(frame: .zero)
         let darkBlueColor = UIColor(red: 61/255, green: 44/255, blue: 141/255, alpha: 1)
@@ -36,25 +37,29 @@ class QuestionView: UIView {
             return label
     }
     
-    lazy var questionStackView: UIStackView = configureStackView()
-    lazy var titleLabel: UILabel = configureTitleLabel()
-    
     private func addViews() {
         addSubview(questionStackView)
-        addSubview(titleLabel)
+        addSubview(questionLabel)
     }
     
     private func addConstaints() {
+        layoutQuestionStackView()
+        layoutQuestionLabel()
+    }
+    
+    private func layoutQuestionStackView() {
         questionStackView.translatesAutoresizingMaskIntoConstraints = false
-        questionStackView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20).isActive = true
+        questionStackView.topAnchor.constraint(equalTo: questionLabel.bottomAnchor, constant: 20).isActive = true
         questionStackView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -5).isActive = true
         questionStackView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 5).isActive = true
         questionStackView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -5).isActive = true
-        
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
-        titleLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
-        titleLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
-        titleLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
+    }
+    
+    private func layoutQuestionLabel() {
+        questionLabel.translatesAutoresizingMaskIntoConstraints = false
+        questionLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
+        questionLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
+        questionLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
+        questionLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
     }
 }
