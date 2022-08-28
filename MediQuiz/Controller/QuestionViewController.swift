@@ -1,90 +1,37 @@
 import UIKit
-import RealmSwift
+import Foundation
+import SwiftUI
 
 class QuestionViewController: UIViewController {
-    
-    var questionLabel = UILabel()
-    var answerStackView = UIStackView()
-    
-    var questionItems: Results<Item>?
-    let realm = try! Realm()
-    var selectedCategory: Category? {
-        didSet {
-            loadItems()
-        }
-    }
+
+    var questionView = QuestionView()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = .white
 
+        addButtons()
+        view = questionView
+//        view.backgroundColor = .systemMint
     }
 
-    func loadItems() {
-        if let questionItems = selectedCategory?.items.sorted(byKeyPath: "question", ascending: true) {
-            print(questionItems)
-            print("HEJO")
-            print(questionItems.randomElement())
-            
-        }
-        configureTitleLabel()
-        configureStackView()
+    private func createButton() -> AnswerButton {
+        let button = AnswerButton()
+        button.tag = 1
+        button.addTarget(self, action: #selector(self.buttonClicked(sender:)), for: .touchUpInside)
+        return button
     }
     
-    func getQuestionText() -> String {
-        if let questionItems = selectedCategory?.items.sorted(byKeyPath: "question", ascending: true) {
-            return questionItems[0].question
-//            print(questionItems[0].question)
-        }
-        return "jiji"
-    }
-    
-    private func configureStackView(){
-        view.addSubview(answerStackView)
-        setStackViewConstraints()
-        addButtonsToStackView()
-        answerStackView.axis = .vertical
-        answerStackView.distribution = .fillEqually
-        answerStackView.spacing = 2
-        answerStackView.backgroundColor = .yellow
-    }
-    
-    func addButtonsToStackView() {
-        let numberOfButtons = 5
-        
-        for i in 1...numberOfButtons {
-            let button = AnswerButton()
+    private func addButtons() {
+        let numberOfAnswers = 5
+        for i in 1...numberOfAnswers {
+            let button = createButton()
+            button.tag = i
             button.setTitle("\(i)", for: .normal)
-            answerStackView.addArrangedSubview(button)
+            questionView.questionStackView.addArrangedSubview(button)
         }
     }
     
-    private func setStackViewConstraints() {
-        answerStackView.backgroundColor = .systemMint
-        answerStackView.translatesAutoresizingMaskIntoConstraints = false
-        answerStackView.topAnchor.constraint(equalTo: questionLabel.bottomAnchor, constant: 20).isActive = true
-        answerStackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -5).isActive = true
-        answerStackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 5).isActive = true
-        answerStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20).isActive = true
+    @objc func buttonClicked(sender: AnswerButton) {
+        print("\(sender.tag) button clicked")
     }
     
-    private func configureTitleLabel() {
-        view.addSubview(questionLabel)
-        questionLabel.text = getQuestionText()
-        questionLabel.font = UIFont.boldSystemFont(ofSize: 40)
-        questionLabel.textAlignment = .center
-        questionLabel.numberOfLines = 1
-        questionLabel.adjustsFontSizeToFitWidth = true
-        questionLabel.textColor = .black
-        
-        setTitleLabelConstraints()
-    }
-    
-    private func setTitleLabelConstraints() {
-        questionLabel.translatesAutoresizingMaskIntoConstraints = false
-        questionLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
-        questionLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
-        questionLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
-        questionLabel.heightAnchor.constraint(equalToConstant: 90).isActive = true
-    }
 }

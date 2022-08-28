@@ -1,8 +1,7 @@
 import Foundation
 import UIKit
-class AnswerButton: UIButton {
 
-    var index: Int = 0
+class AnswerButton: UIButton {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -16,10 +15,13 @@ class AnswerButton: UIButton {
 
     
     func setupButton() {
+        let buttonColor = UIColor(red: 209/255, green: 81/255, blue: 45/255, alpha: 1)
+
         setTitleColor(.white, for: .normal)
-        backgroundColor = .red
+        backgroundColor = .black
         titleLabel?.font = UIFont(name: "AvenirNext-DemiBoldItalic", size: 20)
         titleLabel?.numberOfLines = 0
+        setTitleColor(.systemMint, for: .normal)
         translatesAutoresizingMaskIntoConstraints = false
         titleLabel?.textAlignment = .center
         layer.cornerRadius = 10

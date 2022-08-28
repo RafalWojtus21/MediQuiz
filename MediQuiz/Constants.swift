@@ -1,6 +1,6 @@
 import Foundation
 
-struct K {
+struct Constants {
     static let categories = [
         "Choroby wewnętrzne",
         "Pediatria",

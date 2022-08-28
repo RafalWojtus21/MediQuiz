@@ -7,7 +7,8 @@ class MainView: UIView {
 
     convenience init() {
         self.init(frame: .zero)
-        backgroundColor = .red
+        let darkBlueColor = UIColor(red: 61/255, green: 44/255, blue: 141/255, alpha: 1)
+        backgroundColor = darkBlueColor
         addViews()
         addConstaints()
     }
@@ -15,29 +16,31 @@ class MainView: UIView {
         print(categoriesNames ?? "No categories")
     }
 
-    private func configureStackView() -> UIStackView{
+    private func configureStackView() -> UIStackView {
         let stackView = UIStackView()
+        let purpleColor = UIColor(red: 120/255, green: 88/255, blue: 166/255, alpha: 1)
         stackView.axis = .vertical
         stackView.distribution = .fillEqually
         stackView.spacing = 2
-        stackView.backgroundColor = .systemMint
+        stackView.backgroundColor = purpleColor
         return stackView
     }
     
-    private func configureTitleLabel() -> UILabel{
+    private func configureTitleLabel() -> UILabel {
             let label = UILabel()
-            label.text = "Wybierz kategorię"
             label.font = UIFont.boldSystemFont(ofSize: 40)
             label.textAlignment = .center
             label.numberOfLines = 1
             label.adjustsFontSizeToFitWidth = true
             label.textColor = .white
+            let labelColor = UIColor(red: 143/255, green: 227/255, blue: 207/255, alpha: 1)
+            label.text = "Wybierz kategorię"
+            label.textColor = labelColor
             return label
     }
     
-    private lazy var categoryStackView: UIStackView = configureStackView()
-    private lazy var titleLabel: UILabel = configureTitleLabel()
-    
+    lazy var categoryStackView: UIStackView = configureStackView()
+    lazy var titleLabel: UILabel = configureTitleLabel()
     
     private func addViews() {
         addSubview(categoryStackView)

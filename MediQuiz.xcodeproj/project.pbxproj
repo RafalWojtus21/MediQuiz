@@ -22,6 +22,8 @@
 		8E90259928B5838C0020D5A1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E90259828B5838C0020D5A1 /* Item.swift */; };
 		8E99FB5E28B8C91D000B35D1 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E99FB5D28B8C91D000B35D1 /* Question.swift */; };
 		8E99FB6028B8CF31000B35D1 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E99FB5F28B8CF31000B35D1 /* Answer.swift */; };
+		8E99FB6928BA5927000B35D1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E99FB6B28BA5927000B35D1 /* Localizable.strings */; };
+		8E99FB6D28BA6EAC000B35D1 /* NewQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E99FB6C28BA6EAC000B35D1 /* NewQuestionModel.swift */; };
 		8EB4DA1328B7F2FA009B2563 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB4DA1228B7F2FA009B2563 /* QuestionModel.swift */; };
 		8EB4DA1528B7F62F009B2563 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB4DA1428B7F62E009B2563 /* DataLoader.swift */; };
 		8EB4DA1928B7FF3D009B2563 /* categories_quiz.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EB4DA1828B7FF3D009B2563 /* categories_quiz.json */; };
@@ -47,6 +49,9 @@
 		8E90259828B5838C0020D5A1 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		8E99FB5D28B8C91D000B35D1 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		8E99FB5F28B8CF31000B35D1 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		8E99FB6128BA585F000B35D1 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		8E99FB6A28BA5927000B35D1 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8E99FB6C28BA6EAC000B35D1 /* NewQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQuestionModel.swift; sourceTree = "<group>"; };
 		8EB4DA1228B7F2FA009B2563 /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
 		8EB4DA1428B7F62E009B2563 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		8EB4DA1828B7FF3D009B2563 /* categories_quiz.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = categories_quiz.json; sourceTree = SOURCE_ROOT; };
@@ -69,6 +74,7 @@
 		8E90255A28B4DECD0020D5A1 = {
 			isa = PBXGroup;
 			children = (
+				8E99FB6B28BA5927000B35D1 /* Localizable.strings */,
 				8E90256528B4DECD0020D5A1 /* MediQuiz */,
 				8E90256428B4DECD0020D5A1 /* Products */,
 				E8AB9FDD9083E12D29C8406E /* Pods */,
@@ -106,6 +112,7 @@
 				8E90259628B5837F0020D5A1 /* Category.swift */,
 				8E90259828B5838C0020D5A1 /* Item.swift */,
 				8EB4DA1228B7F2FA009B2563 /* QuestionModel.swift */,
+				8E99FB6C28BA6EAC000B35D1 /* NewQuestionModel.swift */,
 				8E99FB5D28B8C91D000B35D1 /* Question.swift */,
 				8E99FB5F28B8CF31000B35D1 /* Answer.swift */,
 			);
@@ -125,11 +132,11 @@
 		8E90258B28B556350020D5A1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8E90258328B54D940020D5A1 /* HorizontalStackView.swift */,
-				8E90258728B552030020D5A1 /* CategoryButton.swift */,
-				8E78F04A28B6536E0030E5AA /* AnswerButton.swift */,
 				8E90258E28B55A970020D5A1 /* MainView.swift */,
+				8E90258728B552030020D5A1 /* CategoryButton.swift */,
+				8E90258328B54D940020D5A1 /* HorizontalStackView.swift */,
 				8E90259028B55ADF0020D5A1 /* QuestionView.swift */,
+				8E78F04A28B6536E0030E5AA /* AnswerButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,6 +202,7 @@
 			knownRegions = (
 				en,
 				Base,
+				pl,
 			);
 			mainGroup = 8E90255A28B4DECD0020D5A1;
 			productRefGroup = 8E90256428B4DECD0020D5A1 /* Products */;
@@ -212,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E90257628B4DED40020D5A1 /* LaunchScreen.storyboard in Resources */,
+				8E99FB6928BA5927000B35D1 /* Localizable.strings in Resources */,
 				8E90257328B4DED40020D5A1 /* Assets.xcassets in Resources */,
 				8EB4DA1928B7FF3D009B2563 /* categories_quiz.json in Resources */,
 			);
@@ -270,6 +279,7 @@
 				8E90259128B55ADF0020D5A1 /* QuestionView.swift in Sources */,
 				8E90256B28B4DECD0020D5A1 /* ViewController.swift in Sources */,
 				8E99FB5E28B8C91D000B35D1 /* Question.swift in Sources */,
+				8E99FB6D28BA6EAC000B35D1 /* NewQuestionModel.swift in Sources */,
 				8EB4DA1328B7F2FA009B2563 /* QuestionModel.swift in Sources */,
 				8E90258F28B55A970020D5A1 /* MainView.swift in Sources */,
 				8E90256728B4DECD0020D5A1 /* AppDelegate.swift in Sources */,
@@ -291,8 +301,17 @@
 			isa = PBXVariantGroup;
 			children = (
 				8E90257528B4DED40020D5A1 /* Base */,
+				8E99FB6128BA585F000B35D1 /* pl */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8E99FB6B28BA5927000B35D1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E99FB6A28BA5927000B35D1 /* pl */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -302,6 +321,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -363,6 +383,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
