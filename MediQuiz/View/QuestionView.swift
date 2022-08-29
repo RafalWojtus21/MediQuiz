@@ -32,7 +32,7 @@ class QuestionView: UIView {
             label.adjustsFontSizeToFitWidth = true
             label.textColor = .white
             let labelColor = UIColor(red: 143/255, green: 227/255, blue: 207/255, alpha: 1)
-            label.text = "Wybierz kategorię"
+            label.text = "Pytanie"
             label.textColor = labelColor
             return label
     }

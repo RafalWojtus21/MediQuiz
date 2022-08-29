@@ -10,7 +10,6 @@ class QuestionViewController: UIViewController {
 
         addButtons()
         view = questionView
-//        view.backgroundColor = .systemMint
     }
 
     private func createButton() -> AnswerButton {

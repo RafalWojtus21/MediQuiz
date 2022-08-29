@@ -6,22 +6,23 @@ class ViewController: UIViewController {
     
     var mainView = MainView()
     let realm = try! Realm()
-    var categories: Results<Category>?
+//    var categories: Results<Category>?
 //    var newQuestionModel: [NewQuestionModel] = []
-//    var questions: Results<Question>?
-//    
+    var questions: Results<Question>?
+
 //    var selectedCategory: Category?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(Realm.Configuration.defaultConfiguration)
+//        print(Realm.Configuration.defaultConfiguration)
 //        title = "Wybór kategorii"
 //        navigationController?.navigationBar.prefersLargeTitles = true
         addButtons()
         view = mainView
 //
         deleteData()
-        loadData()
+        loadDataFromJSON()
+        readData()
     }
     
     func configureHorizontalStackView() -> UIStackView {
@@ -78,8 +79,13 @@ class ViewController: UIViewController {
             print("Error saving question \(error)")
         }
     }
+    
+    private func readData() {
+        questions = realm.objects(Question.self)
+        print(questions)
+    }
 
-    func loadData() {
+    func loadDataFromJSON() {
         let data = DataLoader().questionModel
         for object in data {
             let newQuestion = Question()
