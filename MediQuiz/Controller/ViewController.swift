@@ -5,24 +5,42 @@ import SwiftUI
 class ViewController: UIViewController {
     
     var mainView = MainView()
-    let realm = try! Realm()
-//    var categories: Results<Category>?
-//    var newQuestionModel: [NewQuestionModel] = []
-    var questions: Results<Question>?
-
-//    var selectedCategory: Category?
     
+    let realm = try! Realm()
+    var questions: Results<Question>?
+    
+    var categoriesArray: [String] = []
+    var categories: [String] = []
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-//        print(Realm.Configuration.defaultConfiguration)
-//        title = "Wybór kategorii"
-//        navigationController?.navigationBar.prefersLargeTitles = true
-        addButtons()
-        view = mainView
-//
+//                print(Realm.Configuration.defaultConfiguration)
+        //        title = "Wybór kategorii"
+        //        navigationController?.navigationBar.prefersLargeTitles = true
         deleteData()
         loadDataFromJSON()
         readData()
+//        print(readData())
+        addButtons()
+        view = mainView
+    }
+    
+    private func readData() -> Results<Question>? {
+        questions = realm.objects(Question.self)
+        if let questions = questions {
+            return questions
+            }
+        return nil
+        }
+        
+    private func getCategoriesNames() -> [String] {
+        if let objects = readData() {
+            for question in objects {
+                categoriesArray.append(question.category)
+            }
+            categories = Array(Set(categoriesArray))
+        }
+        return categories
     }
     
     func configureHorizontalStackView() -> UIStackView {
@@ -52,7 +70,7 @@ class ViewController: UIViewController {
             for k in 1...numberOfColumns {
                 let button = createButton()
                 button.tag = iteration
-                button.setTitle("\(button.tag)", for: .normal)
+                button.setTitle("\(getCategoriesNames()[i])", for: .normal)
                 horizontalStackView.addArrangedSubview(button)
                 iteration += 1
             }
@@ -62,6 +80,13 @@ class ViewController: UIViewController {
     @objc func buttonClicked(sender: CategoryButton) {
         let secondVC = QuestionViewController()
         self.navigationController?.pushViewController(secondVC, animated: true)
+        print(sender.currentTitle!)
+        if let questionSet = readData() {
+            let passingResults = questionSet.filter({ $0.category.contains(sender.currentTitle!) })
+//            print(passingResults)
+            secondVC.questions = questionSet
+        }
+        
     }
     
     private func deleteData() {
@@ -69,7 +94,7 @@ class ViewController: UIViewController {
             realm.deleteAll()
         }
     }
-
+    
     private func saveData(question: Question) {
         do {
             try realm.write {
@@ -79,19 +104,14 @@ class ViewController: UIViewController {
             print("Error saving question \(error)")
         }
     }
-    
-    private func readData() {
-        questions = realm.objects(Question.self)
-        print(questions)
-    }
-
+        
     func loadDataFromJSON() {
         let data = DataLoader().questionModel
         for object in data {
             let newQuestion = Question()
             newQuestion.question = object.question
             newQuestion.category = object.category
-
+            
             for answers in object.answers {
                 let newAnswer = Answer()
                 newAnswer.title = answers.title

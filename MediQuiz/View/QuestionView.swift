@@ -28,7 +28,8 @@ class QuestionView: UIView {
             let label = UILabel()
             label.font = UIFont.boldSystemFont(ofSize: 40)
             label.textAlignment = .center
-            label.numberOfLines = 1
+//            label.adjustsFontSizeToFitWidth = true
+            label.numberOfLines = 0
             label.adjustsFontSizeToFitWidth = true
             label.textColor = .white
             let labelColor = UIColor(red: 143/255, green: 227/255, blue: 207/255, alpha: 1)

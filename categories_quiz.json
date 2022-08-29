@@ -501,8 +501,8 @@
     },
     
     {
-        "question" : "Zdrowie publiczne",
-        "category" : "W analizie użyteczności kosztów (porównanie dwóch interwencji, które mają różne efekty zdrowotne) najczęściej używaną miarą do porównania efektu zdrowotnego jest:",
+        "question" : "W analizie użyteczności kosztów (porównanie dwóch interwencji, które mają różne efekty zdrowotne) najczęściej używaną miarą do porównania efektu zdrowotnego jest:",
+        "category" : "Zdrowie publiczne",
         "answers" : [
             {
                 "id" : 1,
