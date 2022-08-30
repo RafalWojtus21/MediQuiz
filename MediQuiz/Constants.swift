@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 struct Constants {
     static let categories = [
@@ -13,4 +14,8 @@ struct Constants {
         "Orzecnictwo",
         "Zdrowie publiczne"
     ]
+    
+    static let answerButtonColor = UIColor.black
+    static let correctAnswerButtonColor = UIColor.green
+    static let wrongAnswerButtonColor = UIColor.red
 }

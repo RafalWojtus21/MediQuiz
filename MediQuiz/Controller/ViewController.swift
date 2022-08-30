@@ -11,11 +11,11 @@ class ViewController: UIViewController {
     
     var categoriesArray: [String] = []
     var categories: [String] = []
-        
+    var buttons: [UIButton] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 //                print(Realm.Configuration.defaultConfiguration)
-        //        title = "Wybór kategorii"
+//                title = "Wybór kategorii"
         //        navigationController?.navigationBar.prefersLargeTitles = true
         deleteData()
         loadDataFromJSON()
@@ -64,13 +64,15 @@ class ViewController: UIViewController {
         let numberOfRows = 5
         let numberOfColumns = 2
         var iteration = 0
+        getCategoriesNames()
         for i in 1...numberOfRows {
             let horizontalStackView = configureHorizontalStackView()
             mainView.categoryStackView.addArrangedSubview(horizontalStackView)
             for k in 1...numberOfColumns {
                 let button = createButton()
                 button.tag = iteration
-                button.setTitle("\(getCategoriesNames()[i])", for: .normal)
+                button.setTitle("\(categories[iteration])", for: .normal)
+                buttons.append(button)
                 horizontalStackView.addArrangedSubview(button)
                 iteration += 1
             }
@@ -78,13 +80,14 @@ class ViewController: UIViewController {
     }
     
     @objc func buttonClicked(sender: CategoryButton) {
-        let secondVC = QuestionViewController()
-        self.navigationController?.pushViewController(secondVC, animated: true)
+        let questionVC = QuestionViewController()
+        self.navigationController?.pushViewController(questionVC, animated: true)
         print(sender.currentTitle!)
         if let questionSet = readData() {
-            let passingResults = questionSet.filter({ $0.category.contains(sender.currentTitle!) })
-//            print(passingResults)
-            secondVC.questions = questionSet
+            let passingResults = questionSet.filter("category CONTAINS[cd] %@", sender.currentTitle!)
+//            let passingResults = questionSet.filter({ $0.category.contains(sender.currentTitle!) })
+            questionVC.questions = passingResults
+            questionVC.chosenCategory = sender.currentTitle!
         }
         
     }
@@ -111,7 +114,7 @@ class ViewController: UIViewController {
             let newQuestion = Question()
             newQuestion.question = object.question
             newQuestion.category = object.category
-            
+            newQuestion.correct_answer_id = object.correct_answer_id
             for answers in object.answers {
                 let newAnswer = Answer()
                 newAnswer.title = answers.title

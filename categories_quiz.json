@@ -2,6 +2,7 @@
     {
         "question" : " Kobieta lat 52, przyjmuje doustne preparaty żelaza z powodu nieznacznej niedokrwistości   mikrocytarnej - zgłasza obfite miesiączki. Dodatkowo lekarz zalecił wykonanie trzykrotne testu gwajakolowego na obecność krwi utajonej w kale - wyniki dodatnie. U tej pacjentki należy w pierwszej kolejności:",
         "category" : "Choroby wewnętrzne",
+        "correct_answer_id" : 1,
         "answers" : [
             {
                 "id" : 1,
@@ -30,6 +31,7 @@
     {
         "question" : "Obniżone stężenie żelaza w surowicy stwierdza się:",
         "category" : "Choroby wewnętrzne",
+        "correct_answer_id" : 1,
         "answers" : [
             {
                 "id" : 1,
@@ -58,6 +60,7 @@
     {
         "question" : "W leczeniu młodzieńczego idiopatycznego zapalenia stawów stosuje się:",
         "category" : "Pediatria",
+        "correct_answer_id" : 1,
         "answers" : [
             {
                 "id" : 1,
@@ -86,6 +89,7 @@
     {
         "question" : "Wskaż fałszywe stwierdzenie dotyczące zespołu Carneya:",
         "category" : "Pediatria",
+        "correct_answer_id" : 1,
         "answers" : [
             {
                 "id" : 1,
@@ -114,6 +118,7 @@
     {
         "question" : "W przypadku gruczolakoraka zlokalizowanego w esicy możliwe jest wykonanie:",
         "category" : "Chirurgia ogólna",
+        "correct_answer_id" : 1,
         "answers" : [
             {
                 "id" : 1,
@@ -142,6 +147,7 @@
     {
         "question" : "Do wtórnych zapaleń otrzewnej nie zalicza się:",
         "category" : "Chirurgia ogólna",
+        "correct_answer_id" : 1,
         "answers" : [
             {
                 "id" : 1,
@@ -170,6 +176,7 @@
     {
         "question" : "Do objawów raka jajnika nie należy:",
         "category" : "Położnictwo i ginekologia",
+        "correct_answer_id" : 1,
         "answers" : [
             {
                 "id" : 1,
@@ -198,6 +205,7 @@
     {
         "question" : "Wskaż fałszywe stwierdzenie dotyczące łożyska:",
         "category" : "Położnictwo i ginekologia",
+        "correct_answer_id" : 1,
         "answers" : [
             {
                 "id" : 1,
@@ -225,6 +233,7 @@
     {
         "question" : "Najczęstszą przyczyną uwarunkowanej genetycznie niepełnosprawności intelektualnej w       populacji ludzkiej jest zespół:",
         "category" : "Medycyna rodzinna",
+        "correct_answer_id" : 1,
         "answers" : [
             {
                 "id" : 1,
@@ -252,6 +261,7 @@
     {
         "question" : "Które z poniższych czynności charakteryzują niemowlę w szóstym miesiącu życia?",
         "category" : "Medycyna rodzinna",
+        "correct_answer_id" : 1,
         "answers" : [
             {
                 "id" : 1,
@@ -280,6 +290,7 @@
     {
         "question" : "Bulimia najrzadziej współwystępuje z:",
         "category" : "Psychiatria",
+        "correct_answer_id" : 1,
         "answers" : [
             {
                 "id" : 1,
@@ -308,6 +319,7 @@
     {
         "question" : "Epizod depresji w przebiegu choroby afektywnej dwubiegunowej częściej niż w przebiegu zaburzeń depresyjnych nawracających charakteryzuje się:",
         "category" : "Psychiatria",
+        "correct_answer_id" : 1,
         "answers" : [
             {
                 "id" : 1,
@@ -336,6 +348,7 @@
     {
         "question" : "Kiedy stosuje się opaskę uciskową?",
         "category" : "Medycyna ratunkowa i intensywna terapia",
+        "correct_answer_id" : 1,
         "answers" : [
             {
                 "id" : 1,
@@ -364,6 +377,7 @@
     {
         "question" : "Które z wymienionych znajdują zastosowanie w trakcie resuscytacji pacjenta z zatrzymaniem krążenia z migotaniem komór?",
         "category" : "Medycyna ratunkowa i intensywna terapia",
+        "correct_answer_id" : 1,
         "answers" : [
             {
                 "id" : 1,
@@ -392,6 +406,7 @@
     {
         "question" : "Czy lekarz jest obowiązany powiadomić organy ścigania o stwierdzonej w trakcie badania lekarskiego próbie zabicia człowieka?",
         "category" : "Bioetyka i prawo medyczne",
+        "correct_answer_id" : 1,
         "answers" : [
             {
                 "id" : 1,
@@ -420,6 +435,7 @@
     {
         "question" : "Czy lekarz może nie podjąć się lub odstąpić od leczenia chorego?",
         "category" : "Bioetyka i prawo medyczne",
+        "correct_answer_id" : 1,
         "answers" : [
             {
                 "id" : 1,
@@ -448,6 +464,7 @@
     {
         "question" : "Nadzór nad zgodnością działań ZUS z obowiązującymi przepisami sprawuje:",
         "category" : "Orzecnictwo",
+        "correct_answer_id" : 1,
         "answers" : [
             {
                 "id" : 1,
@@ -476,6 +493,7 @@
     {
         "question" : "Obowiązkowo ubezpieczeniu wypadkowemu podlegają:",
         "category" : "Orzecnictwo",
+        "correct_answer_id" : 1,
         "answers" : [
             {
                 "id" : 1,
@@ -503,6 +521,7 @@
     {
         "question" : "W analizie użyteczności kosztów (porównanie dwóch interwencji, które mają różne efekty zdrowotne) najczęściej używaną miarą do porównania efektu zdrowotnego jest:",
         "category" : "Zdrowie publiczne",
+        "correct_answer_id" : 1,
         "answers" : [
             {
                 "id" : 1,
@@ -530,6 +549,7 @@
     {
         "question" : "Według szacunków World Health Organization zakażenia związane z opieką zdrowotną odnotowuje się przeciętnie u:",
         "category" : "Zdrowie publiczne",
+        "correct_answer_id" : 1,
         "answers" : [
             {
                 "id" : 1,
@@ -552,6 +572,6 @@
                 "title" : "około 30 na 100 pacjentów hospitalizowanych."
             }
         ]
-    },
+    }
     
 ]

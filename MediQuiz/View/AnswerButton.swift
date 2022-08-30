@@ -14,7 +14,7 @@ class AnswerButton: UIButton {
     }
 
     func setupButton() {
-        let buttonColor = UIColor(red: 209/255, green: 81/255, blue: 45/255, alpha: 1)
+        let buttonColor = Constants.answerButtonColor
         backgroundColor = .black
         titleLabel?.font = UIFont(name: "AvenirNext-DemiBoldItalic", size: 20)
         titleLabel?.numberOfLines = 0
