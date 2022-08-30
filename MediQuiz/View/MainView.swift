@@ -8,12 +8,12 @@ class MainView: UIView {
     
     convenience init() {
         self.init(frame: .zero)
-        let darkBlueColor = UIColor(red: 61/255, green: 44/255, blue: 141/255, alpha: 1)
+        let darkBlueColor = Constants.darkBlueColor
         backgroundColor = darkBlueColor
         addViews()
         addConstaints()
     }
-
+    
     private func configureStackView() -> UIStackView {
         let stackView = UIStackView()
         let purpleColor = UIColor(red: 120/255, green: 88/255, blue: 166/255, alpha: 1)
@@ -25,16 +25,16 @@ class MainView: UIView {
     }
     
     private func configureTitleLabel() -> UILabel {
-            let label = UILabel()
-            label.font = UIFont.boldSystemFont(ofSize: 40)
-            label.textAlignment = .center
-            label.numberOfLines = 1
-            label.adjustsFontSizeToFitWidth = true
-            label.textColor = .white
-            let labelColor = UIColor(red: 143/255, green: 227/255, blue: 207/255, alpha: 1)
-            label.text = "Wybierz kategorię"
-            label.textColor = labelColor
-            return label
+        let label = UILabel()
+        label.font = UIFont.boldSystemFont(ofSize: 40)
+        label.textAlignment = .center
+        label.numberOfLines = 1
+        label.adjustsFontSizeToFitWidth = true
+        label.textColor = .white
+        let labelColor = UIColor(red: 143/255, green: 227/255, blue: 207/255, alpha: 1)
+        label.text = "Wybierz kategorię"
+        label.textColor = labelColor
+        return label
     }
     
     private func addViews() {

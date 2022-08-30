@@ -14,14 +14,12 @@ class AnswerButton: UIButton {
     }
 
     func setupButton() {
-        let buttonColor = Constants.answerButtonColor
-        backgroundColor = .black
+        backgroundColor = Constants.answerButtonColor
         titleLabel?.font = UIFont(name: "AvenirNext-DemiBoldItalic", size: 20)
         titleLabel?.numberOfLines = 0
         setTitleColor(Constants.answerButtonFontColor, for: .normal)
         translatesAutoresizingMaskIntoConstraints = false
         titleLabel?.textAlignment = .center
         layer.cornerRadius = 10
-        
     }
 }

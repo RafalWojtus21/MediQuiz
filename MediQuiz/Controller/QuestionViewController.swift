@@ -6,39 +6,60 @@ import RealmSwift
 class QuestionViewController: UIViewController {
     
     let realm = try! Realm()
+    var quizBrain: QuizBrain?
+    var quizLogic = QuizLogic()
     
     var questionView = QuestionView()
-    var questions: Results<Question>?
-    var questionSet: [Question] = []
-    var buttons: [UIButton] = []
+    var questions: Results<Question>? {
+        didSet {
+            loadData()
+        }
+    }
     var chosenCategory: String = ""
+    
+    var questionSet: [Question] = []
+    let numberOfQuestions = 2
     var randomNumbers = Set<Int>()
     var questionNumber = 0
     var currentScore = 0
+    var buttons: [UIButton] = []
+    var testSet: [Question] = []
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         title = chosenCategory
         navigationController?.navigationBar.tintColor = .white
         let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
         navigationController?.navigationBar.titleTextAttributes = textAttributes
+        
         view = questionView
+        
         drawRandomQuestions()
         addButtons()
+        configureView()
+    }
+    
+    func loadData() {
+        quizLogic.questions = questions
+        quizLogic.chosenCategory = chosenCategory
+    }
+    
+    private func configureView() {
         assignQuestionToLabel()
         assignAnswersToButtons()
     }
-    
     private func nextQuestion() {
         if questionNumber + 1 < questionSet.count {
             questionNumber += 1
-            updateUI()
         } else {
             print("koniec quizu")
             let resultVC = ResultViewController()
             self.navigationController?.pushViewController(resultVC, animated: true)
+            var dataToPass: [Int] = []
+            dataToPass.append(currentScore)
+            dataToPass.append(numberOfQuestions)
+            resultVC.scoreCalculation = dataToPass
         }
     }
     
@@ -93,7 +114,6 @@ class QuestionViewController: UIViewController {
     }
     
     private func getRandomInts() -> [Int] {
-        let numberOfQuestions = 2
         while randomNumbers.count < numberOfQuestions {
             let randomInt = Int.random(in: 0...1)
             randomNumbers.insert(randomInt)
@@ -113,7 +133,6 @@ class QuestionViewController: UIViewController {
         for i in 0..<numberOfAnswers {
             let button = createButton()
             button.tag = i
-            //            button.setTitle("\(configureButtonLabel(index: button.tag))", for: .normal)
             buttons.append(button)
             questionView.questionStackView.addArrangedSubview(button)
         }
@@ -128,6 +147,7 @@ class QuestionViewController: UIViewController {
                 button.setTitleColor(Constants.answerButtonFontColor, for: .normal)
             }
             self.nextQuestion()
+            self.updateUI()
         }
     }
 }

@@ -4,43 +4,27 @@ import SwiftUI
 
 class ViewController: UIViewController {
     
-    var mainView = MainView()
-    
     let realm = try! Realm()
+    var quizBrain = QuizBrain()
+    var mainView = MainView()
     var questions: Results<Question>?
-    
-    var categoriesArray: [String] = []
     var categories: [String] = []
     var buttons: [UIButton] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-//                print(Realm.Configuration.defaultConfiguration)
-//                title = "Wybór kategorii"
+        //                print(Realm.Configuration.defaultConfiguration)
+        //                title = "Wybór kategorii"
         //        navigationController?.navigationBar.prefersLargeTitles = true
-        deleteData()
-        loadDataFromJSON()
-        readData()
-//        print(readData())
+        
+        loadData()
         addButtons()
         view = mainView
     }
     
-    private func readData() -> Results<Question>? {
-        questions = realm.objects(Question.self)
-        if let questions = questions {
-            return questions
-            }
-        return nil
-        }
-        
-    private func getCategoriesNames() -> [String] {
-        if let objects = readData() {
-            for question in objects {
-                categoriesArray.append(question.category)
-            }
-            categories = Array(Set(categoriesArray))
-        }
-        return categories
+    func loadData() {
+        categories = quizBrain.getCategoriesNames()
+        questions = quizBrain.questions
     }
     
     func configureHorizontalStackView() -> UIStackView {
@@ -64,7 +48,6 @@ class ViewController: UIViewController {
         let numberOfRows = 5
         let numberOfColumns = 2
         var iteration = 0
-        getCategoriesNames()
         for i in 1...numberOfRows {
             let horizontalStackView = configureHorizontalStackView()
             mainView.categoryStackView.addArrangedSubview(horizontalStackView)
@@ -81,51 +64,18 @@ class ViewController: UIViewController {
     
     @objc func buttonClicked(sender: CategoryButton) {
         let questionVC = QuestionViewController()
-        self.navigationController?.pushViewController(questionVC, animated: true)
-        print(sender.currentTitle!)
         if let questionSet = questions {
             let passingResults = questionSet.filter("category CONTAINS[cd] %@", sender.currentTitle!)
-//            let passingResults = questionSet.filter({ $0.category.contains(sender.currentTitle!) })
+            //            let passingResults = questionSet.filter({ $0.category.contains(sender.currentTitle!) })
             questionVC.questions = passingResults
             questionVC.chosenCategory = sender.currentTitle!
+            questionVC.quizBrain = quizBrain
         }
-        
-    }
-    
-    private func deleteData() {
-        try! realm.write {
-            realm.deleteAll()
-        }
-    }
-    
-    private func saveData(question: Question) {
-        do {
-            try realm.write {
-                realm.add(question)
-            }
-        } catch {
-            print("Error saving question \(error)")
-        }
-    }
-        
-    func loadDataFromJSON() {
-        let data = DataLoader().questionModel
-        addDatatoRealm(data: data)
-    }
-    
-    func addDatatoRealm(data: [QuestionModel]) {
-        for object in data {
-            let newQuestion = Question()
-            newQuestion.question = object.question
-            newQuestion.category = object.category
-            newQuestion.correct_answer_id = object.correct_answer_id
-            for answers in object.answers {
-                let newAnswer = Answer()
-                newAnswer.title = answers.title
-                newAnswer.id = answers.id
-                newQuestion.answers.append(newAnswer)
-            }
-            self.saveData(question: newQuestion)
+        sender.backgroundColor = Constants.categoryButtonPressedColor
+        let delayInSeconds = 0.5
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
+            sender.backgroundColor = Constants.categoryButtonColor
+            self.navigationController?.pushViewController(questionVC, animated: true)
         }
     }
 }

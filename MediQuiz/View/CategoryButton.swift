@@ -16,7 +16,7 @@ class CategoryButton: UIButton {
     func setupButton() {
         let buttonColor = UIColor(red: 209/255, green: 81/255, blue: 45/255, alpha: 1)
         setTitleColor(.white, for: .normal)
-        backgroundColor = .black
+        backgroundColor = Constants.categoryButtonColor
         titleLabel?.font = UIFont(name: "AvenirNext-DemiBoldItalic", size: 20)
         titleLabel?.numberOfLines = 0
         setTitleColor(.systemMint, for: .normal)

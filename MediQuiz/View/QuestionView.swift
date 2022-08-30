@@ -8,8 +8,7 @@ class QuestionView: UIView {
     
     convenience init() {
         self.init(frame: .zero)
-        let darkBlueColor = UIColor(red: 61/255, green: 44/255, blue: 141/255, alpha: 1)
-        backgroundColor = darkBlueColor
+        backgroundColor = Constants.darkBlueColor
         addViews()
         addConstaints()
     }
