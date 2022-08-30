@@ -18,4 +18,6 @@ struct Constants {
     static let answerButtonColor = UIColor.black
     static let correctAnswerButtonColor = UIColor.green
     static let wrongAnswerButtonColor = UIColor.red
+    static let answerButtonFontColor = UIColor.systemMint
+    static let answerButtonCheckFontColor = UIColor.black
 }

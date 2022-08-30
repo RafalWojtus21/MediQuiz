@@ -18,7 +18,7 @@ class AnswerButton: UIButton {
         backgroundColor = .black
         titleLabel?.font = UIFont(name: "AvenirNext-DemiBoldItalic", size: 20)
         titleLabel?.numberOfLines = 0
-        setTitleColor(.systemMint, for: .normal)
+        setTitleColor(Constants.answerButtonFontColor, for: .normal)
         translatesAutoresizingMaskIntoConstraints = false
         titleLabel?.textAlignment = .center
         layer.cornerRadius = 10

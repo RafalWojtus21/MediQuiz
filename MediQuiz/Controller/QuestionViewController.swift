@@ -44,6 +44,7 @@ class QuestionViewController: UIViewController {
     
     private func checkAnswer(index: Int, button: UIButton) -> Bool{
         let correctAnswerId = questionSet[questionNumber].correct_answer_id
+        button.setTitleColor(Constants.answerButtonCheckFontColor, for: .normal)
         if index == correctAnswerId {
             button.backgroundColor = Constants.correctAnswerButtonColor
             currentScore += 1
@@ -51,6 +52,7 @@ class QuestionViewController: UIViewController {
         } else {
             buttons[correctAnswerId].backgroundColor = Constants.correctAnswerButtonColor
             button.backgroundColor = Constants.wrongAnswerButtonColor
+            buttons[correctAnswerId].setTitleColor(Constants.answerButtonCheckFontColor, for: .normal)
             return false
         }
     }
@@ -120,10 +122,10 @@ class QuestionViewController: UIViewController {
     @objc func buttonClicked(sender: AnswerButton) {
         checkAnswer(index: sender.tag, button: sender)
         let delayInSeconds = 1.0
-        
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
             self.buttons.forEach { button in
                 button.backgroundColor = Constants.answerButtonColor
+                button.setTitleColor(Constants.answerButtonFontColor, for: .normal)
             }
             self.nextQuestion()
         }

@@ -83,7 +83,7 @@ class ViewController: UIViewController {
         let questionVC = QuestionViewController()
         self.navigationController?.pushViewController(questionVC, animated: true)
         print(sender.currentTitle!)
-        if let questionSet = readData() {
+        if let questionSet = questions {
             let passingResults = questionSet.filter("category CONTAINS[cd] %@", sender.currentTitle!)
 //            let passingResults = questionSet.filter({ $0.category.contains(sender.currentTitle!) })
             questionVC.questions = passingResults
@@ -110,6 +110,10 @@ class ViewController: UIViewController {
         
     func loadDataFromJSON() {
         let data = DataLoader().questionModel
+        addDatatoRealm(data: data)
+    }
+    
+    func addDatatoRealm(data: [QuestionModel]) {
         for object in data {
             let newQuestion = Question()
             newQuestion.question = object.question
