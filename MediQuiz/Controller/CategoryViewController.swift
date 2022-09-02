@@ -2,11 +2,16 @@ import UIKit
 import RealmSwift
 import SwiftUI
 
-class ViewController: UIViewController {
+class CategoryViewController: UIViewController {
+    
+    private var categoryView: CategoryView { return view as! CategoryView }
+    
+    override func loadView() {
+        view = CategoryView(frame: UIScreen.main.bounds)
+    }
     
     let realm = try! Realm()
-    var quizBrain = QuizBrain()
-    var mainView = MainView()
+
     var questions: Results<Question>?
     var categories: [String] = []
     var buttons: [UIButton] = []
@@ -14,17 +19,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //                print(Realm.Configuration.defaultConfiguration)
-        //                title = "Wybór kategorii"
-        //        navigationController?.navigationBar.prefersLargeTitles = true
-        
+        self.setupNavigationAttributs()
+        self.categoryView.setupUI()
         loadData()
         addButtons()
-        view = mainView
     }
     
+    private func setupNavigationAttributs() {
+            navigationController?.setNavigationBarHidden(true, animated: true)
+        }
+    
     func loadData() {
-        categories = quizBrain.getCategoriesNames()
-        questions = quizBrain.questions
+        categories = QuizBrain.shared.getCategoriesNames()
+        questions = QuizBrain.shared.questions
     }
     
     func configureHorizontalStackView() -> UIStackView {
@@ -40,7 +47,7 @@ class ViewController: UIViewController {
     private func createButton() -> CategoryButton {
         let button = CategoryButton()
         button.tag = 1
-        button.addTarget(self, action: #selector(self.buttonClicked(sender:)), for: .touchUpInside)
+        button.addTarget(self, action: #selector(self.startQuiz(sender:)), for: .touchUpInside)
         return button
     }
     
@@ -50,7 +57,7 @@ class ViewController: UIViewController {
         var iteration = 0
         for i in 1...numberOfRows {
             let horizontalStackView = configureHorizontalStackView()
-            mainView.categoryStackView.addArrangedSubview(horizontalStackView)
+            categoryView.categoryStackView.addArrangedSubview(horizontalStackView)
             for k in 1...numberOfColumns {
                 let button = createButton()
                 button.tag = iteration
@@ -62,14 +69,14 @@ class ViewController: UIViewController {
         }
     }
     
-    @objc func buttonClicked(sender: CategoryButton) {
+    @objc func startQuiz(sender: CategoryButton) {
+        QuizBrain.shared.chosenCategory = sender.currentTitle!
         let questionVC = QuestionViewController()
         if let questionSet = questions {
             let passingResults = questionSet.filter("category CONTAINS[cd] %@", sender.currentTitle!)
+            QuizBrain.shared.filterQuestionsFromCategory(category: sender.currentTitle!)
+            QuizBrain.shared.drawRandomQuestions()
             //            let passingResults = questionSet.filter({ $0.category.contains(sender.currentTitle!) })
-            questionVC.questions = passingResults
-            questionVC.chosenCategory = sender.currentTitle!
-            questionVC.quizBrain = quizBrain
         }
         sender.backgroundColor = Constants.categoryButtonPressedColor
         let delayInSeconds = 0.5

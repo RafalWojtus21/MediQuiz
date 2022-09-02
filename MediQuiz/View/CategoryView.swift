@@ -1,19 +1,24 @@
 import Foundation
 import UIKit
 
-class MainView: UIView {
+class CategoryView: UIView {
     
     lazy var categoryStackView: UIStackView = configureStackView()
     lazy var titleLabel: UILabel = configureTitleLabel()
+        
+    override init(frame: CGRect) {
+         super.init(frame: frame)
+     }
+
+     required init?(coder aDecoder: NSCoder) {
+         fatalError("init(coder:) has not been implemented")
+     }
     
-    convenience init() {
-        self.init(frame: .zero)
-        let darkBlueColor = Constants.darkBlueColor
-        backgroundColor = darkBlueColor
+    func setupUI() {
         addViews()
         addConstaints()
+        self.backgroundColor = Constants.darkBlueColor
     }
-    
     private func configureStackView() -> UIStackView {
         let stackView = UIStackView()
         let purpleColor = UIColor(red: 120/255, green: 88/255, blue: 166/255, alpha: 1)

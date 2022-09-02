@@ -572,6 +572,2420 @@
                 "title" : "około 30 na 100 pacjentów hospitalizowanych."
             }
         ]
+    },
+    
+    {
+        "question" : " Kobieta lat 52, przyjmuje doustne preparaty żelaza z powodu nieznacznej niedokrwistości   mikrocytarnej - zgłasza obfite miesiączki. Dodatkowo lekarz zalecił wykonanie trzykrotne testu gwajakolowego na obecność krwi utajonej w kale - wyniki dodatnie. U tej pacjentki należy w pierwszej kolejności:",
+        "category" : "Choroby wewnętrzne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "wykonać kolonoskopię."
+            },
+            {
+                "id" : 2,
+                "title" : "powtórzyć test po odstawieniu preparatów żelaza."
+            },
+            {
+                "id" : 3,
+                "title" : "wyeliminować chorobę trzewną."
+            },
+            {
+                "id" : 4,
+                "title" : "zalecić dietę z eliminacją dużych dawek witaminy C i powtórzyć badanie."
+            },
+            {
+                "id" : 5,
+                "title" : "uzależnić decyzję od objawów ze strony przewodu pokarmowego."
+            }
+        ]
+        
+    },
+    
+    {
+        "question" : "Obniżone stężenie żelaza w surowicy stwierdza się:",
+        "category" : "Choroby wewnętrzne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "w niedokrwistości megaloblastycznej."
+            },
+            {
+                "id" : 2,
+                "title" : "w niedokrwistości syderoblastycznej."
+            },
+            {
+                "id" : 3,
+                "title" : "w niedokrwistości chorób przewlekłych."
+            },
+            {
+                "id" : 4,
+                "title" : "u zdrowych osób w wieku 16-20 lat."
+            },
+            {
+                "id" : 5,
+                "title" : "u zdrowych osób powyżej 65. roku życia."
+            }
+        ]
+        
+    },
+    
+    {
+        "question" : "W leczeniu młodzieńczego idiopatycznego zapalenia stawów stosuje się:",
+        "category" : "Pediatria",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "kwas acetylosalicylowy."
+            },
+            {
+                "id" : 2,
+                "title" : "cefalosporynę II generacji."
+            },
+            {
+                "id" : 3,
+                "title" : "fenoksymetylopenicylinę."
+            },
+            {
+                "id" : 4,
+                "title" : "metotreksat."
+            },
+            {
+                "id" : 5,
+                "title" : "żaden z wymienionych."
+            }
+        ]
+        
+    },
+    
+    {
+        "question" : "Wskaż fałszywe stwierdzenie dotyczące zespołu Carneya:",
+        "category" : "Pediatria",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "dziedziczy się autosomalnie dominująco."
+            },
+            {
+                "id" : 2,
+                "title" : "spowodowany jest inaktywującą mutacją genu PRKR1A."
+            },
+            {
+                "id" : 3,
+                "title" : "występuje po okresie dojrzewania, częściej u mężczyzn."
+            },
+            {
+                "id" : 4,
+                "title" : "przebieg zespołu Cushinga u chorych z zespołem Carneya może być subkliniczny, cykliczny i jawny"
+            },
+            {
+                "id" : 5,
+                "title" : "obserwuje się wzrost stężenia kortyzolu po podaniu deksametazonu."
+            }
+        ]
+        
+    },
+    
+    {
+        "question" : "W przypadku gruczolakoraka zlokalizowanego w esicy możliwe jest wykonanie:",
+        "category" : "Chirurgia ogólna",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "laparoskopii, resekcji esicy."
+            },
+            {
+                "id" : 2,
+                "title" : "operacji Hartmanna przez laparotomię."
+            },
+            {
+                "id" : 3,
+                "title" : "resekcji esicy przez laparotomię."
+            },
+            {
+                "id" : 4,
+                "title" : "laparoskopii, operacji Hartmanna."
+            },
+            {
+                "id" : 5,
+                "title" : "wszystkich wymienionych."
+            }
+        ]
+        
+    },
+    
+    {
+        "question" : "Do wtórnych zapaleń otrzewnej nie zalicza się:",
+        "category" : "Chirurgia ogólna",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "zapalenia związanego z przewlekłą dializą otrzewnową."
+            },
+            {
+                "id" : 2,
+                "title" : "martwicy ściany jelita."
+            },
+            {
+                "id" : 3,
+                "title" : "zapalenia związanego z nieszczelnością zespolenia jelitowego."
+            },
+            {
+                "id" : 4,
+                "title" : "ziarniniakowego zapalenia otrzewnej."
+            },
+            {
+                "id" : 5,
+                "title" : "zapalenia otrzewnej z obecnością grzybów."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Do objawów raka jajnika nie należy:",
+        "category" : "Położnictwo i ginekologia",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "ból w miednicy lub jamie brzusznej."
+            },
+            {
+                "id" : 2,
+                "title" : "oliguria."
+            },
+            {
+                "id" : 3,
+                "title" : "powiększenie obwodu brzucha."
+            },
+            {
+                "id" : 4,
+                "title" : "wzdęcia, uczucie pełności."
+            },
+            {
+                "id" : 5,
+                "title" : "parcia naglące."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Wskaż fałszywe stwierdzenie dotyczące łożyska:",
+        "category" : "Położnictwo i ginekologia",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "razem z pępowiną i błonami płodowymi tworzy popłód."
+            },
+            {
+                "id" : 2,
+                "title" : "masa łożyska w przybliżeniu stanowi 500g."
+            },
+            {
+                "id" : 3,
+                "title" : "o wykształconym łożysku można mówić dopiero w połowie II trymestru."
+            },
+            {
+                "id" : 4,
+                "title" : "zraz łożyska to jednostka morfologiczno-czynnościowa łożyska."
+            },
+            {
+                "id" : 5,
+                "title" : "żyła pępkowa prawa zanika we wczesnym okresie życia płodowego."
+            }
+        ]
+    },
+    
+    {
+        "question" : "Najczęstszą przyczyną uwarunkowanej genetycznie niepełnosprawności intelektualnej w       populacji ludzkiej jest zespół:",
+        "category" : "Medycyna rodzinna",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "Pataua."
+            },
+            {
+                "id" : 2,
+                "title" : "Edwardsa."
+            },
+            {
+                "id" : 3,
+                "title" : "Klinefeltera."
+            },
+            {
+                "id" : 4,
+                "title" : "Downa."
+            },
+            {
+                "id" : 5,
+                "title" : "Turnera."
+            }
+        ]
+    },
+    
+    {
+        "question" : "Które z poniższych czynności charakteryzują niemowlę w szóstym miesiącu życia?",
+        "category" : "Medycyna rodzinna",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "podpiera się na wyprostowanych ramionach i na wpół lub całkiem otwartych dłoniach."
+            },
+            {
+                "id" : 2,
+                "title" : "przekłada zabawkę z ręki do ręki."
+            },
+            {
+                "id" : 3,
+                "title" : "celowo upuszcza przedmiot."
+            },
+            {
+                "id" : 4,
+                "title" : "prawdziwe są odpowiedzi A, B."
+            },
+            {
+                "id" : 5,
+                "title" : "prawdziwe są odpowiedzi A, B."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Bulimia najrzadziej współwystępuje z:",
+        "category" : "Psychiatria",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "depresją."
+            },
+            {
+                "id" : 2,
+                "title" : "osobowością anankastyczną."
+            },
+            {
+                "id" : 3,
+                "title" : "osobowością chwiejną emocjonalnie typu borderline."
+            },
+            {
+                "id" : 4,
+                "title" : "uzależnieniami."
+            },
+            {
+                "id" : 5,
+                "title" : "zaburzeniami lękowymi."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Epizod depresji w przebiegu choroby afektywnej dwubiegunowej częściej niż w przebiegu zaburzeń depresyjnych nawracających charakteryzuje się:",
+        "category" : "Psychiatria",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "nadmierną sennością."
+            },
+            {
+                "id" : 2,
+                "title" : "młodym wiekiem wystąpienia pierwszego epizodu."
+            },
+            {
+                "id" : 3,
+                "title" : "obecnością objawów psychotycznych."
+            },
+            {
+                "id" : 4,
+                "title" : "opornością na leczenie za pomocą leków przeciwdepresyjnych."
+            },
+            {
+                "id" : 5,
+                "title" : "wszystkimi wymienionymi."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Kiedy stosuje się opaskę uciskową?",
+        "category" : "Medycyna ratunkowa i intensywna terapia",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "celem udzielenia pomocy jak największej liczbie poszkodowanych w katastrofie."
+            },
+            {
+                "id" : 2,
+                "title" : "w sytuacji amputacji urazowej."
+            },
+            {
+                "id" : 3,
+                "title" : "w przypadku niemożności zatamowania krwawienia dostępnymi metodami."
+            },
+            {
+                "id" : 4,
+                "title" : "prawdziwe są odpowiedzi A,B,C."
+            },
+            {
+                "id" : 5,
+                "title" : "prawdziwe są odpowiedzi A,B."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Które z wymienionych znajdują zastosowanie w trakcie resuscytacji pacjenta z zatrzymaniem krążenia z migotaniem komór?",
+        "category" : "Medycyna ratunkowa i intensywna terapia",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "atropina."
+            },
+            {
+                "id" : 2,
+                "title" : "adrenalina."
+            },
+            {
+                "id" : 3,
+                "title" : "adrenalina, amiodaron, magnez."
+            },
+            {
+                "id" : 4,
+                "title" : "adrenalina, amiodaron."
+            },
+            {
+                "id" : 5,
+                "title" : "amiodaron, lidokaina."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Czy lekarz jest obowiązany powiadomić organy ścigania o stwierdzonej w trakcie badania lekarskiego próbie zabicia człowieka?",
+        "category" : "Bioetyka i prawo medyczne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "lekarz nigdy nie posiada takiego obowiązku."
+            },
+            {
+                "id" : 2,
+                "title" : "denuncjacja pacjenta ma charakter fakultatywny, a nie obligatoryjny"
+            },
+            {
+                "id" : 3,
+                "title" : "lekarz w podobnej sytuacji ma obowiązek powiadomić izbę lekarską."
+            },
+            {
+                "id" : 4,
+                "title" : "prawo nie odnosi się do podobnych kwestii."
+            },
+            {
+                "id" : 5,
+                "title" : "lekarz ma obowiązek podjąć takie działania, gdyż dotyczą one czynu zabronionego, o którym wypowiada się art. 240 § 1. Kodeksu karnego."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Czy lekarz może nie podjąć się lub odstąpić od leczenia chorego?",
+        "category" : "Bioetyka i prawo medyczne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "tak, ale w wyjątkowych przypadkach i musi w tej sytuacji powiadomić chorego o możliwości skorzystania z pomocy w innym miejscu."
+            },
+            {
+                "id" : 2,
+                "title" : "nie, lekarz zawsze ma obowiązek udzielić choremu pomocy."
+            },
+            {
+                "id" : 3,
+                "title" : "tak, za zgodą ordynatora."
+            },
+            {
+                "id" : 4,
+                "title" : "tak, za zgodą dyrektora szpitala."
+            },
+            {
+                "id" : 5,
+                "title" : "przepisy nie regulują tej kwestii."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Nadzór nad zgodnością działań ZUS z obowiązującymi przepisami sprawuje:",
+        "category" : "Orzecnictwo",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "Minister Zdrowia."
+            },
+            {
+                "id" : 2,
+                "title" : "Minister właściwy do spraw zabezpieczenia społecznego."
+            },
+            {
+                "id" : 3,
+                "title" : "Prezes Rady Ministrów."
+            },
+            {
+                "id" : 4,
+                "title" : "Rada Nadzorcza ZUS."
+            },
+            {
+                "id" : 5,
+                "title" : "Prezes ZUS."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Obowiązkowo ubezpieczeniu wypadkowemu podlegają:",
+        "category" : "Orzecnictwo",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "pracownicy."
+            },
+            {
+                "id" : 2,
+                "title" : "bezrobotni pobierający zasiłek dla bezrobotnych."
+            },
+            {
+                "id" : 3,
+                "title" : "bezrobotni pobierający świadczenie integracyjne."
+            },
+            {
+                "id" : 4,
+                "title" : "posłowie do Parlamentu Europejskiego."
+            },
+            {
+                "id" : 5,
+                "title" : "członkowie Rady Europy."
+            }
+        ]
+    },
+    
+    {
+        "question" : "W analizie użyteczności kosztów (porównanie dwóch interwencji, które mają różne efekty zdrowotne) najczęściej używaną miarą do porównania efektu zdrowotnego jest:",
+        "category" : "Zdrowie publiczne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "śmiertelność."
+            },
+            {
+                "id" : 2,
+                "title" : "QALY."
+            },
+            {
+                "id" : 3,
+                "title" : "VOLY."
+            },
+            {
+                "id" : 4,
+                "title" : "DALY."
+            },
+            {
+                "id" : 5,
+                "title" : "HYE."
+            }
+        ]
+    },
+    
+    {
+        "question" : "Według szacunków World Health Organization zakażenia związane z opieką zdrowotną odnotowuje się przeciętnie u:",
+        "category" : "Zdrowie publiczne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "około 10 na 100 pacjentów hospitalizowanych."
+            },
+            {
+                "id" : 2,
+                "title" : "około 15 na 100 pacjentów hospitalizowanych."
+            },
+            {
+                "id" : 3,
+                "title" : "około 20 na 100 pacjentów hospitalizowanych."
+            },
+            {
+                "id" : 4,
+                "title" : "około 25 na 100 pacjentów hospitalizowanych."
+            },
+            {
+                "id" : 5,
+                "title" : "około 30 na 100 pacjentów hospitalizowanych."
+            }
+        ]
+    },
+    
+    {
+        "question" : " Kobieta lat 52, przyjmuje doustne preparaty żelaza z powodu nieznacznej niedokrwistości   mikrocytarnej - zgłasza obfite miesiączki. Dodatkowo lekarz zalecił wykonanie trzykrotne testu gwajakolowego na obecność krwi utajonej w kale - wyniki dodatnie. U tej pacjentki należy w pierwszej kolejności:",
+        "category" : "Choroby wewnętrzne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "wykonać kolonoskopię."
+            },
+            {
+                "id" : 2,
+                "title" : "powtórzyć test po odstawieniu preparatów żelaza."
+            },
+            {
+                "id" : 3,
+                "title" : "wyeliminować chorobę trzewną."
+            },
+            {
+                "id" : 4,
+                "title" : "zalecić dietę z eliminacją dużych dawek witaminy C i powtórzyć badanie."
+            },
+            {
+                "id" : 5,
+                "title" : "uzależnić decyzję od objawów ze strony przewodu pokarmowego."
+            }
+        ]
+        
+    },
+    
+    {
+        "question" : "Obniżone stężenie żelaza w surowicy stwierdza się:",
+        "category" : "Choroby wewnętrzne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "w niedokrwistości megaloblastycznej."
+            },
+            {
+                "id" : 2,
+                "title" : "w niedokrwistości syderoblastycznej."
+            },
+            {
+                "id" : 3,
+                "title" : "w niedokrwistości chorób przewlekłych."
+            },
+            {
+                "id" : 4,
+                "title" : "u zdrowych osób w wieku 16-20 lat."
+            },
+            {
+                "id" : 5,
+                "title" : "u zdrowych osób powyżej 65. roku życia."
+            }
+        ]
+        
+    },
+    
+    {
+        "question" : "W leczeniu młodzieńczego idiopatycznego zapalenia stawów stosuje się:",
+        "category" : "Pediatria",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "kwas acetylosalicylowy."
+            },
+            {
+                "id" : 2,
+                "title" : "cefalosporynę II generacji."
+            },
+            {
+                "id" : 3,
+                "title" : "fenoksymetylopenicylinę."
+            },
+            {
+                "id" : 4,
+                "title" : "metotreksat."
+            },
+            {
+                "id" : 5,
+                "title" : "żaden z wymienionych."
+            }
+        ]
+        
+    },
+    
+    {
+        "question" : "Wskaż fałszywe stwierdzenie dotyczące zespołu Carneya:",
+        "category" : "Pediatria",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "dziedziczy się autosomalnie dominująco."
+            },
+            {
+                "id" : 2,
+                "title" : "spowodowany jest inaktywującą mutacją genu PRKR1A."
+            },
+            {
+                "id" : 3,
+                "title" : "występuje po okresie dojrzewania, częściej u mężczyzn."
+            },
+            {
+                "id" : 4,
+                "title" : "przebieg zespołu Cushinga u chorych z zespołem Carneya może być subkliniczny, cykliczny i jawny"
+            },
+            {
+                "id" : 5,
+                "title" : "obserwuje się wzrost stężenia kortyzolu po podaniu deksametazonu."
+            }
+        ]
+        
+    },
+    
+    {
+        "question" : "W przypadku gruczolakoraka zlokalizowanego w esicy możliwe jest wykonanie:",
+        "category" : "Chirurgia ogólna",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "laparoskopii, resekcji esicy."
+            },
+            {
+                "id" : 2,
+                "title" : "operacji Hartmanna przez laparotomię."
+            },
+            {
+                "id" : 3,
+                "title" : "resekcji esicy przez laparotomię."
+            },
+            {
+                "id" : 4,
+                "title" : "laparoskopii, operacji Hartmanna."
+            },
+            {
+                "id" : 5,
+                "title" : "wszystkich wymienionych."
+            }
+        ]
+        
+    },
+    
+    {
+        "question" : "Do wtórnych zapaleń otrzewnej nie zalicza się:",
+        "category" : "Chirurgia ogólna",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "zapalenia związanego z przewlekłą dializą otrzewnową."
+            },
+            {
+                "id" : 2,
+                "title" : "martwicy ściany jelita."
+            },
+            {
+                "id" : 3,
+                "title" : "zapalenia związanego z nieszczelnością zespolenia jelitowego."
+            },
+            {
+                "id" : 4,
+                "title" : "ziarniniakowego zapalenia otrzewnej."
+            },
+            {
+                "id" : 5,
+                "title" : "zapalenia otrzewnej z obecnością grzybów."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Do objawów raka jajnika nie należy:",
+        "category" : "Położnictwo i ginekologia",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "ból w miednicy lub jamie brzusznej."
+            },
+            {
+                "id" : 2,
+                "title" : "oliguria."
+            },
+            {
+                "id" : 3,
+                "title" : "powiększenie obwodu brzucha."
+            },
+            {
+                "id" : 4,
+                "title" : "wzdęcia, uczucie pełności."
+            },
+            {
+                "id" : 5,
+                "title" : "parcia naglące."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Wskaż fałszywe stwierdzenie dotyczące łożyska:",
+        "category" : "Położnictwo i ginekologia",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "razem z pępowiną i błonami płodowymi tworzy popłód."
+            },
+            {
+                "id" : 2,
+                "title" : "masa łożyska w przybliżeniu stanowi 500g."
+            },
+            {
+                "id" : 3,
+                "title" : "o wykształconym łożysku można mówić dopiero w połowie II trymestru."
+            },
+            {
+                "id" : 4,
+                "title" : "zraz łożyska to jednostka morfologiczno-czynnościowa łożyska."
+            },
+            {
+                "id" : 5,
+                "title" : "żyła pępkowa prawa zanika we wczesnym okresie życia płodowego."
+            }
+        ]
+    },
+    
+    {
+        "question" : "Najczęstszą przyczyną uwarunkowanej genetycznie niepełnosprawności intelektualnej w       populacji ludzkiej jest zespół:",
+        "category" : "Medycyna rodzinna",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "Pataua."
+            },
+            {
+                "id" : 2,
+                "title" : "Edwardsa."
+            },
+            {
+                "id" : 3,
+                "title" : "Klinefeltera."
+            },
+            {
+                "id" : 4,
+                "title" : "Downa."
+            },
+            {
+                "id" : 5,
+                "title" : "Turnera."
+            }
+        ]
+    },
+    
+    {
+        "question" : "Które z poniższych czynności charakteryzują niemowlę w szóstym miesiącu życia?",
+        "category" : "Medycyna rodzinna",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "podpiera się na wyprostowanych ramionach i na wpół lub całkiem otwartych dłoniach."
+            },
+            {
+                "id" : 2,
+                "title" : "przekłada zabawkę z ręki do ręki."
+            },
+            {
+                "id" : 3,
+                "title" : "celowo upuszcza przedmiot."
+            },
+            {
+                "id" : 4,
+                "title" : "prawdziwe są odpowiedzi A, B."
+            },
+            {
+                "id" : 5,
+                "title" : "prawdziwe są odpowiedzi A, B."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Bulimia najrzadziej współwystępuje z:",
+        "category" : "Psychiatria",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "depresją."
+            },
+            {
+                "id" : 2,
+                "title" : "osobowością anankastyczną."
+            },
+            {
+                "id" : 3,
+                "title" : "osobowością chwiejną emocjonalnie typu borderline."
+            },
+            {
+                "id" : 4,
+                "title" : "uzależnieniami."
+            },
+            {
+                "id" : 5,
+                "title" : "zaburzeniami lękowymi."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Epizod depresji w przebiegu choroby afektywnej dwubiegunowej częściej niż w przebiegu zaburzeń depresyjnych nawracających charakteryzuje się:",
+        "category" : "Psychiatria",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "nadmierną sennością."
+            },
+            {
+                "id" : 2,
+                "title" : "młodym wiekiem wystąpienia pierwszego epizodu."
+            },
+            {
+                "id" : 3,
+                "title" : "obecnością objawów psychotycznych."
+            },
+            {
+                "id" : 4,
+                "title" : "opornością na leczenie za pomocą leków przeciwdepresyjnych."
+            },
+            {
+                "id" : 5,
+                "title" : "wszystkimi wymienionymi."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Kiedy stosuje się opaskę uciskową?",
+        "category" : "Medycyna ratunkowa i intensywna terapia",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "celem udzielenia pomocy jak największej liczbie poszkodowanych w katastrofie."
+            },
+            {
+                "id" : 2,
+                "title" : "w sytuacji amputacji urazowej."
+            },
+            {
+                "id" : 3,
+                "title" : "w przypadku niemożności zatamowania krwawienia dostępnymi metodami."
+            },
+            {
+                "id" : 4,
+                "title" : "prawdziwe są odpowiedzi A,B,C."
+            },
+            {
+                "id" : 5,
+                "title" : "prawdziwe są odpowiedzi A,B."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Które z wymienionych znajdują zastosowanie w trakcie resuscytacji pacjenta z zatrzymaniem krążenia z migotaniem komór?",
+        "category" : "Medycyna ratunkowa i intensywna terapia",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "atropina."
+            },
+            {
+                "id" : 2,
+                "title" : "adrenalina."
+            },
+            {
+                "id" : 3,
+                "title" : "adrenalina, amiodaron, magnez."
+            },
+            {
+                "id" : 4,
+                "title" : "adrenalina, amiodaron."
+            },
+            {
+                "id" : 5,
+                "title" : "amiodaron, lidokaina."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Czy lekarz jest obowiązany powiadomić organy ścigania o stwierdzonej w trakcie badania lekarskiego próbie zabicia człowieka?",
+        "category" : "Bioetyka i prawo medyczne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "lekarz nigdy nie posiada takiego obowiązku."
+            },
+            {
+                "id" : 2,
+                "title" : "denuncjacja pacjenta ma charakter fakultatywny, a nie obligatoryjny"
+            },
+            {
+                "id" : 3,
+                "title" : "lekarz w podobnej sytuacji ma obowiązek powiadomić izbę lekarską."
+            },
+            {
+                "id" : 4,
+                "title" : "prawo nie odnosi się do podobnych kwestii."
+            },
+            {
+                "id" : 5,
+                "title" : "lekarz ma obowiązek podjąć takie działania, gdyż dotyczą one czynu zabronionego, o którym wypowiada się art. 240 § 1. Kodeksu karnego."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Czy lekarz może nie podjąć się lub odstąpić od leczenia chorego?",
+        "category" : "Bioetyka i prawo medyczne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "tak, ale w wyjątkowych przypadkach i musi w tej sytuacji powiadomić chorego o możliwości skorzystania z pomocy w innym miejscu."
+            },
+            {
+                "id" : 2,
+                "title" : "nie, lekarz zawsze ma obowiązek udzielić choremu pomocy."
+            },
+            {
+                "id" : 3,
+                "title" : "tak, za zgodą ordynatora."
+            },
+            {
+                "id" : 4,
+                "title" : "tak, za zgodą dyrektora szpitala."
+            },
+            {
+                "id" : 5,
+                "title" : "przepisy nie regulują tej kwestii."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Nadzór nad zgodnością działań ZUS z obowiązującymi przepisami sprawuje:",
+        "category" : "Orzecnictwo",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "Minister Zdrowia."
+            },
+            {
+                "id" : 2,
+                "title" : "Minister właściwy do spraw zabezpieczenia społecznego."
+            },
+            {
+                "id" : 3,
+                "title" : "Prezes Rady Ministrów."
+            },
+            {
+                "id" : 4,
+                "title" : "Rada Nadzorcza ZUS."
+            },
+            {
+                "id" : 5,
+                "title" : "Prezes ZUS."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Obowiązkowo ubezpieczeniu wypadkowemu podlegają:",
+        "category" : "Orzecnictwo",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "pracownicy."
+            },
+            {
+                "id" : 2,
+                "title" : "bezrobotni pobierający zasiłek dla bezrobotnych."
+            },
+            {
+                "id" : 3,
+                "title" : "bezrobotni pobierający świadczenie integracyjne."
+            },
+            {
+                "id" : 4,
+                "title" : "posłowie do Parlamentu Europejskiego."
+            },
+            {
+                "id" : 5,
+                "title" : "członkowie Rady Europy."
+            }
+        ]
+    },
+    
+    {
+        "question" : "W analizie użyteczności kosztów (porównanie dwóch interwencji, które mają różne efekty zdrowotne) najczęściej używaną miarą do porównania efektu zdrowotnego jest:",
+        "category" : "Zdrowie publiczne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "śmiertelność."
+            },
+            {
+                "id" : 2,
+                "title" : "QALY."
+            },
+            {
+                "id" : 3,
+                "title" : "VOLY."
+            },
+            {
+                "id" : 4,
+                "title" : "DALY."
+            },
+            {
+                "id" : 5,
+                "title" : "HYE."
+            }
+        ]
+    },
+    
+    {
+        "question" : "Według szacunków World Health Organization zakażenia związane z opieką zdrowotną odnotowuje się przeciętnie u:",
+        "category" : "Zdrowie publiczne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "około 10 na 100 pacjentów hospitalizowanych."
+            },
+            {
+                "id" : 2,
+                "title" : "około 15 na 100 pacjentów hospitalizowanych."
+            },
+            {
+                "id" : 3,
+                "title" : "około 20 na 100 pacjentów hospitalizowanych."
+            },
+            {
+                "id" : 4,
+                "title" : "około 25 na 100 pacjentów hospitalizowanych."
+            },
+            {
+                "id" : 5,
+                "title" : "około 30 na 100 pacjentów hospitalizowanych."
+            }
+        ]
+    },
+    
+    {
+        "question" : " Kobieta lat 52, przyjmuje doustne preparaty żelaza z powodu nieznacznej niedokrwistości   mikrocytarnej - zgłasza obfite miesiączki. Dodatkowo lekarz zalecił wykonanie trzykrotne testu gwajakolowego na obecność krwi utajonej w kale - wyniki dodatnie. U tej pacjentki należy w pierwszej kolejności:",
+        "category" : "Choroby wewnętrzne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "wykonać kolonoskopię."
+            },
+            {
+                "id" : 2,
+                "title" : "powtórzyć test po odstawieniu preparatów żelaza."
+            },
+            {
+                "id" : 3,
+                "title" : "wyeliminować chorobę trzewną."
+            },
+            {
+                "id" : 4,
+                "title" : "zalecić dietę z eliminacją dużych dawek witaminy C i powtórzyć badanie."
+            },
+            {
+                "id" : 5,
+                "title" : "uzależnić decyzję od objawów ze strony przewodu pokarmowego."
+            }
+        ]
+        
+    },
+    
+    {
+        "question" : "Obniżone stężenie żelaza w surowicy stwierdza się:",
+        "category" : "Choroby wewnętrzne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "w niedokrwistości megaloblastycznej."
+            },
+            {
+                "id" : 2,
+                "title" : "w niedokrwistości syderoblastycznej."
+            },
+            {
+                "id" : 3,
+                "title" : "w niedokrwistości chorób przewlekłych."
+            },
+            {
+                "id" : 4,
+                "title" : "u zdrowych osób w wieku 16-20 lat."
+            },
+            {
+                "id" : 5,
+                "title" : "u zdrowych osób powyżej 65. roku życia."
+            }
+        ]
+        
+    },
+    
+    {
+        "question" : "W leczeniu młodzieńczego idiopatycznego zapalenia stawów stosuje się:",
+        "category" : "Pediatria",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "kwas acetylosalicylowy."
+            },
+            {
+                "id" : 2,
+                "title" : "cefalosporynę II generacji."
+            },
+            {
+                "id" : 3,
+                "title" : "fenoksymetylopenicylinę."
+            },
+            {
+                "id" : 4,
+                "title" : "metotreksat."
+            },
+            {
+                "id" : 5,
+                "title" : "żaden z wymienionych."
+            }
+        ]
+        
+    },
+    
+    {
+        "question" : "Wskaż fałszywe stwierdzenie dotyczące zespołu Carneya:",
+        "category" : "Pediatria",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "dziedziczy się autosomalnie dominująco."
+            },
+            {
+                "id" : 2,
+                "title" : "spowodowany jest inaktywującą mutacją genu PRKR1A."
+            },
+            {
+                "id" : 3,
+                "title" : "występuje po okresie dojrzewania, częściej u mężczyzn."
+            },
+            {
+                "id" : 4,
+                "title" : "przebieg zespołu Cushinga u chorych z zespołem Carneya może być subkliniczny, cykliczny i jawny"
+            },
+            {
+                "id" : 5,
+                "title" : "obserwuje się wzrost stężenia kortyzolu po podaniu deksametazonu."
+            }
+        ]
+        
+    },
+    
+    {
+        "question" : "W przypadku gruczolakoraka zlokalizowanego w esicy możliwe jest wykonanie:",
+        "category" : "Chirurgia ogólna",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "laparoskopii, resekcji esicy."
+            },
+            {
+                "id" : 2,
+                "title" : "operacji Hartmanna przez laparotomię."
+            },
+            {
+                "id" : 3,
+                "title" : "resekcji esicy przez laparotomię."
+            },
+            {
+                "id" : 4,
+                "title" : "laparoskopii, operacji Hartmanna."
+            },
+            {
+                "id" : 5,
+                "title" : "wszystkich wymienionych."
+            }
+        ]
+        
+    },
+    
+    {
+        "question" : "Do wtórnych zapaleń otrzewnej nie zalicza się:",
+        "category" : "Chirurgia ogólna",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "zapalenia związanego z przewlekłą dializą otrzewnową."
+            },
+            {
+                "id" : 2,
+                "title" : "martwicy ściany jelita."
+            },
+            {
+                "id" : 3,
+                "title" : "zapalenia związanego z nieszczelnością zespolenia jelitowego."
+            },
+            {
+                "id" : 4,
+                "title" : "ziarniniakowego zapalenia otrzewnej."
+            },
+            {
+                "id" : 5,
+                "title" : "zapalenia otrzewnej z obecnością grzybów."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Do objawów raka jajnika nie należy:",
+        "category" : "Położnictwo i ginekologia",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "ból w miednicy lub jamie brzusznej."
+            },
+            {
+                "id" : 2,
+                "title" : "oliguria."
+            },
+            {
+                "id" : 3,
+                "title" : "powiększenie obwodu brzucha."
+            },
+            {
+                "id" : 4,
+                "title" : "wzdęcia, uczucie pełności."
+            },
+            {
+                "id" : 5,
+                "title" : "parcia naglące."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Wskaż fałszywe stwierdzenie dotyczące łożyska:",
+        "category" : "Położnictwo i ginekologia",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "razem z pępowiną i błonami płodowymi tworzy popłód."
+            },
+            {
+                "id" : 2,
+                "title" : "masa łożyska w przybliżeniu stanowi 500g."
+            },
+            {
+                "id" : 3,
+                "title" : "o wykształconym łożysku można mówić dopiero w połowie II trymestru."
+            },
+            {
+                "id" : 4,
+                "title" : "zraz łożyska to jednostka morfologiczno-czynnościowa łożyska."
+            },
+            {
+                "id" : 5,
+                "title" : "żyła pępkowa prawa zanika we wczesnym okresie życia płodowego."
+            }
+        ]
+    },
+    
+    {
+        "question" : "Najczęstszą przyczyną uwarunkowanej genetycznie niepełnosprawności intelektualnej w       populacji ludzkiej jest zespół:",
+        "category" : "Medycyna rodzinna",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "Pataua."
+            },
+            {
+                "id" : 2,
+                "title" : "Edwardsa."
+            },
+            {
+                "id" : 3,
+                "title" : "Klinefeltera."
+            },
+            {
+                "id" : 4,
+                "title" : "Downa."
+            },
+            {
+                "id" : 5,
+                "title" : "Turnera."
+            }
+        ]
+    },
+    
+    {
+        "question" : "Które z poniższych czynności charakteryzują niemowlę w szóstym miesiącu życia?",
+        "category" : "Medycyna rodzinna",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "podpiera się na wyprostowanych ramionach i na wpół lub całkiem otwartych dłoniach."
+            },
+            {
+                "id" : 2,
+                "title" : "przekłada zabawkę z ręki do ręki."
+            },
+            {
+                "id" : 3,
+                "title" : "celowo upuszcza przedmiot."
+            },
+            {
+                "id" : 4,
+                "title" : "prawdziwe są odpowiedzi A, B."
+            },
+            {
+                "id" : 5,
+                "title" : "prawdziwe są odpowiedzi A, B."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Bulimia najrzadziej współwystępuje z:",
+        "category" : "Psychiatria",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "depresją."
+            },
+            {
+                "id" : 2,
+                "title" : "osobowością anankastyczną."
+            },
+            {
+                "id" : 3,
+                "title" : "osobowością chwiejną emocjonalnie typu borderline."
+            },
+            {
+                "id" : 4,
+                "title" : "uzależnieniami."
+            },
+            {
+                "id" : 5,
+                "title" : "zaburzeniami lękowymi."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Epizod depresji w przebiegu choroby afektywnej dwubiegunowej częściej niż w przebiegu zaburzeń depresyjnych nawracających charakteryzuje się:",
+        "category" : "Psychiatria",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "nadmierną sennością."
+            },
+            {
+                "id" : 2,
+                "title" : "młodym wiekiem wystąpienia pierwszego epizodu."
+            },
+            {
+                "id" : 3,
+                "title" : "obecnością objawów psychotycznych."
+            },
+            {
+                "id" : 4,
+                "title" : "opornością na leczenie za pomocą leków przeciwdepresyjnych."
+            },
+            {
+                "id" : 5,
+                "title" : "wszystkimi wymienionymi."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Kiedy stosuje się opaskę uciskową?",
+        "category" : "Medycyna ratunkowa i intensywna terapia",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "celem udzielenia pomocy jak największej liczbie poszkodowanych w katastrofie."
+            },
+            {
+                "id" : 2,
+                "title" : "w sytuacji amputacji urazowej."
+            },
+            {
+                "id" : 3,
+                "title" : "w przypadku niemożności zatamowania krwawienia dostępnymi metodami."
+            },
+            {
+                "id" : 4,
+                "title" : "prawdziwe są odpowiedzi A,B,C."
+            },
+            {
+                "id" : 5,
+                "title" : "prawdziwe są odpowiedzi A,B."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Które z wymienionych znajdują zastosowanie w trakcie resuscytacji pacjenta z zatrzymaniem krążenia z migotaniem komór?",
+        "category" : "Medycyna ratunkowa i intensywna terapia",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "atropina."
+            },
+            {
+                "id" : 2,
+                "title" : "adrenalina."
+            },
+            {
+                "id" : 3,
+                "title" : "adrenalina, amiodaron, magnez."
+            },
+            {
+                "id" : 4,
+                "title" : "adrenalina, amiodaron."
+            },
+            {
+                "id" : 5,
+                "title" : "amiodaron, lidokaina."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Czy lekarz jest obowiązany powiadomić organy ścigania o stwierdzonej w trakcie badania lekarskiego próbie zabicia człowieka?",
+        "category" : "Bioetyka i prawo medyczne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "lekarz nigdy nie posiada takiego obowiązku."
+            },
+            {
+                "id" : 2,
+                "title" : "denuncjacja pacjenta ma charakter fakultatywny, a nie obligatoryjny"
+            },
+            {
+                "id" : 3,
+                "title" : "lekarz w podobnej sytuacji ma obowiązek powiadomić izbę lekarską."
+            },
+            {
+                "id" : 4,
+                "title" : "prawo nie odnosi się do podobnych kwestii."
+            },
+            {
+                "id" : 5,
+                "title" : "lekarz ma obowiązek podjąć takie działania, gdyż dotyczą one czynu zabronionego, o którym wypowiada się art. 240 § 1. Kodeksu karnego."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Czy lekarz może nie podjąć się lub odstąpić od leczenia chorego?",
+        "category" : "Bioetyka i prawo medyczne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "tak, ale w wyjątkowych przypadkach i musi w tej sytuacji powiadomić chorego o możliwości skorzystania z pomocy w innym miejscu."
+            },
+            {
+                "id" : 2,
+                "title" : "nie, lekarz zawsze ma obowiązek udzielić choremu pomocy."
+            },
+            {
+                "id" : 3,
+                "title" : "tak, za zgodą ordynatora."
+            },
+            {
+                "id" : 4,
+                "title" : "tak, za zgodą dyrektora szpitala."
+            },
+            {
+                "id" : 5,
+                "title" : "przepisy nie regulują tej kwestii."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Nadzór nad zgodnością działań ZUS z obowiązującymi przepisami sprawuje:",
+        "category" : "Orzecnictwo",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "Minister Zdrowia."
+            },
+            {
+                "id" : 2,
+                "title" : "Minister właściwy do spraw zabezpieczenia społecznego."
+            },
+            {
+                "id" : 3,
+                "title" : "Prezes Rady Ministrów."
+            },
+            {
+                "id" : 4,
+                "title" : "Rada Nadzorcza ZUS."
+            },
+            {
+                "id" : 5,
+                "title" : "Prezes ZUS."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Obowiązkowo ubezpieczeniu wypadkowemu podlegają:",
+        "category" : "Orzecnictwo",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "pracownicy."
+            },
+            {
+                "id" : 2,
+                "title" : "bezrobotni pobierający zasiłek dla bezrobotnych."
+            },
+            {
+                "id" : 3,
+                "title" : "bezrobotni pobierający świadczenie integracyjne."
+            },
+            {
+                "id" : 4,
+                "title" : "posłowie do Parlamentu Europejskiego."
+            },
+            {
+                "id" : 5,
+                "title" : "członkowie Rady Europy."
+            }
+        ]
+    },
+    
+    {
+        "question" : "W analizie użyteczności kosztów (porównanie dwóch interwencji, które mają różne efekty zdrowotne) najczęściej używaną miarą do porównania efektu zdrowotnego jest:",
+        "category" : "Zdrowie publiczne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "śmiertelność."
+            },
+            {
+                "id" : 2,
+                "title" : "QALY."
+            },
+            {
+                "id" : 3,
+                "title" : "VOLY."
+            },
+            {
+                "id" : 4,
+                "title" : "DALY."
+            },
+            {
+                "id" : 5,
+                "title" : "HYE."
+            }
+        ]
+    },
+    
+    {
+        "question" : "Według szacunków World Health Organization zakażenia związane z opieką zdrowotną odnotowuje się przeciętnie u:",
+        "category" : "Zdrowie publiczne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "około 10 na 100 pacjentów hospitalizowanych."
+            },
+            {
+                "id" : 2,
+                "title" : "około 15 na 100 pacjentów hospitalizowanych."
+            },
+            {
+                "id" : 3,
+                "title" : "około 20 na 100 pacjentów hospitalizowanych."
+            },
+            {
+                "id" : 4,
+                "title" : "około 25 na 100 pacjentów hospitalizowanych."
+            },
+            {
+                "id" : 5,
+                "title" : "około 30 na 100 pacjentów hospitalizowanych."
+            }
+        ]
+    },
+    
+    {
+        "question" : " Kobieta lat 52, przyjmuje doustne preparaty żelaza z powodu nieznacznej niedokrwistości   mikrocytarnej - zgłasza obfite miesiączki. Dodatkowo lekarz zalecił wykonanie trzykrotne testu gwajakolowego na obecność krwi utajonej w kale - wyniki dodatnie. U tej pacjentki należy w pierwszej kolejności:",
+        "category" : "Choroby wewnętrzne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "wykonać kolonoskopię."
+            },
+            {
+                "id" : 2,
+                "title" : "powtórzyć test po odstawieniu preparatów żelaza."
+            },
+            {
+                "id" : 3,
+                "title" : "wyeliminować chorobę trzewną."
+            },
+            {
+                "id" : 4,
+                "title" : "zalecić dietę z eliminacją dużych dawek witaminy C i powtórzyć badanie."
+            },
+            {
+                "id" : 5,
+                "title" : "uzależnić decyzję od objawów ze strony przewodu pokarmowego."
+            }
+        ]
+        
+    },
+    
+    {
+        "question" : "Obniżone stężenie żelaza w surowicy stwierdza się:",
+        "category" : "Choroby wewnętrzne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "w niedokrwistości megaloblastycznej."
+            },
+            {
+                "id" : 2,
+                "title" : "w niedokrwistości syderoblastycznej."
+            },
+            {
+                "id" : 3,
+                "title" : "w niedokrwistości chorób przewlekłych."
+            },
+            {
+                "id" : 4,
+                "title" : "u zdrowych osób w wieku 16-20 lat."
+            },
+            {
+                "id" : 5,
+                "title" : "u zdrowych osób powyżej 65. roku życia."
+            }
+        ]
+        
+    },
+    
+    {
+        "question" : "W leczeniu młodzieńczego idiopatycznego zapalenia stawów stosuje się:",
+        "category" : "Pediatria",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "kwas acetylosalicylowy."
+            },
+            {
+                "id" : 2,
+                "title" : "cefalosporynę II generacji."
+            },
+            {
+                "id" : 3,
+                "title" : "fenoksymetylopenicylinę."
+            },
+            {
+                "id" : 4,
+                "title" : "metotreksat."
+            },
+            {
+                "id" : 5,
+                "title" : "żaden z wymienionych."
+            }
+        ]
+        
+    },
+    
+    {
+        "question" : "Wskaż fałszywe stwierdzenie dotyczące zespołu Carneya:",
+        "category" : "Pediatria",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "dziedziczy się autosomalnie dominująco."
+            },
+            {
+                "id" : 2,
+                "title" : "spowodowany jest inaktywującą mutacją genu PRKR1A."
+            },
+            {
+                "id" : 3,
+                "title" : "występuje po okresie dojrzewania, częściej u mężczyzn."
+            },
+            {
+                "id" : 4,
+                "title" : "przebieg zespołu Cushinga u chorych z zespołem Carneya może być subkliniczny, cykliczny i jawny"
+            },
+            {
+                "id" : 5,
+                "title" : "obserwuje się wzrost stężenia kortyzolu po podaniu deksametazonu."
+            }
+        ]
+        
+    },
+    
+    {
+        "question" : "W przypadku gruczolakoraka zlokalizowanego w esicy możliwe jest wykonanie:",
+        "category" : "Chirurgia ogólna",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "laparoskopii, resekcji esicy."
+            },
+            {
+                "id" : 2,
+                "title" : "operacji Hartmanna przez laparotomię."
+            },
+            {
+                "id" : 3,
+                "title" : "resekcji esicy przez laparotomię."
+            },
+            {
+                "id" : 4,
+                "title" : "laparoskopii, operacji Hartmanna."
+            },
+            {
+                "id" : 5,
+                "title" : "wszystkich wymienionych."
+            }
+        ]
+        
+    },
+    
+    {
+        "question" : "Do wtórnych zapaleń otrzewnej nie zalicza się:",
+        "category" : "Chirurgia ogólna",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "zapalenia związanego z przewlekłą dializą otrzewnową."
+            },
+            {
+                "id" : 2,
+                "title" : "martwicy ściany jelita."
+            },
+            {
+                "id" : 3,
+                "title" : "zapalenia związanego z nieszczelnością zespolenia jelitowego."
+            },
+            {
+                "id" : 4,
+                "title" : "ziarniniakowego zapalenia otrzewnej."
+            },
+            {
+                "id" : 5,
+                "title" : "zapalenia otrzewnej z obecnością grzybów."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Do objawów raka jajnika nie należy:",
+        "category" : "Położnictwo i ginekologia",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "ból w miednicy lub jamie brzusznej."
+            },
+            {
+                "id" : 2,
+                "title" : "oliguria."
+            },
+            {
+                "id" : 3,
+                "title" : "powiększenie obwodu brzucha."
+            },
+            {
+                "id" : 4,
+                "title" : "wzdęcia, uczucie pełności."
+            },
+            {
+                "id" : 5,
+                "title" : "parcia naglące."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Wskaż fałszywe stwierdzenie dotyczące łożyska:",
+        "category" : "Położnictwo i ginekologia",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "razem z pępowiną i błonami płodowymi tworzy popłód."
+            },
+            {
+                "id" : 2,
+                "title" : "masa łożyska w przybliżeniu stanowi 500g."
+            },
+            {
+                "id" : 3,
+                "title" : "o wykształconym łożysku można mówić dopiero w połowie II trymestru."
+            },
+            {
+                "id" : 4,
+                "title" : "zraz łożyska to jednostka morfologiczno-czynnościowa łożyska."
+            },
+            {
+                "id" : 5,
+                "title" : "żyła pępkowa prawa zanika we wczesnym okresie życia płodowego."
+            }
+        ]
+    },
+    
+    {
+        "question" : "Najczęstszą przyczyną uwarunkowanej genetycznie niepełnosprawności intelektualnej w       populacji ludzkiej jest zespół:",
+        "category" : "Medycyna rodzinna",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "Pataua."
+            },
+            {
+                "id" : 2,
+                "title" : "Edwardsa."
+            },
+            {
+                "id" : 3,
+                "title" : "Klinefeltera."
+            },
+            {
+                "id" : 4,
+                "title" : "Downa."
+            },
+            {
+                "id" : 5,
+                "title" : "Turnera."
+            }
+        ]
+    },
+    
+    {
+        "question" : "Które z poniższych czynności charakteryzują niemowlę w szóstym miesiącu życia?",
+        "category" : "Medycyna rodzinna",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "podpiera się na wyprostowanych ramionach i na wpół lub całkiem otwartych dłoniach."
+            },
+            {
+                "id" : 2,
+                "title" : "przekłada zabawkę z ręki do ręki."
+            },
+            {
+                "id" : 3,
+                "title" : "celowo upuszcza przedmiot."
+            },
+            {
+                "id" : 4,
+                "title" : "prawdziwe są odpowiedzi A, B."
+            },
+            {
+                "id" : 5,
+                "title" : "prawdziwe są odpowiedzi A, B."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Bulimia najrzadziej współwystępuje z:",
+        "category" : "Psychiatria",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "depresją."
+            },
+            {
+                "id" : 2,
+                "title" : "osobowością anankastyczną."
+            },
+            {
+                "id" : 3,
+                "title" : "osobowością chwiejną emocjonalnie typu borderline."
+            },
+            {
+                "id" : 4,
+                "title" : "uzależnieniami."
+            },
+            {
+                "id" : 5,
+                "title" : "zaburzeniami lękowymi."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Epizod depresji w przebiegu choroby afektywnej dwubiegunowej częściej niż w przebiegu zaburzeń depresyjnych nawracających charakteryzuje się:",
+        "category" : "Psychiatria",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "nadmierną sennością."
+            },
+            {
+                "id" : 2,
+                "title" : "młodym wiekiem wystąpienia pierwszego epizodu."
+            },
+            {
+                "id" : 3,
+                "title" : "obecnością objawów psychotycznych."
+            },
+            {
+                "id" : 4,
+                "title" : "opornością na leczenie za pomocą leków przeciwdepresyjnych."
+            },
+            {
+                "id" : 5,
+                "title" : "wszystkimi wymienionymi."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Kiedy stosuje się opaskę uciskową?",
+        "category" : "Medycyna ratunkowa i intensywna terapia",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "celem udzielenia pomocy jak największej liczbie poszkodowanych w katastrofie."
+            },
+            {
+                "id" : 2,
+                "title" : "w sytuacji amputacji urazowej."
+            },
+            {
+                "id" : 3,
+                "title" : "w przypadku niemożności zatamowania krwawienia dostępnymi metodami."
+            },
+            {
+                "id" : 4,
+                "title" : "prawdziwe są odpowiedzi A,B,C."
+            },
+            {
+                "id" : 5,
+                "title" : "prawdziwe są odpowiedzi A,B."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Które z wymienionych znajdują zastosowanie w trakcie resuscytacji pacjenta z zatrzymaniem krążenia z migotaniem komór?",
+        "category" : "Medycyna ratunkowa i intensywna terapia",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "atropina."
+            },
+            {
+                "id" : 2,
+                "title" : "adrenalina."
+            },
+            {
+                "id" : 3,
+                "title" : "adrenalina, amiodaron, magnez."
+            },
+            {
+                "id" : 4,
+                "title" : "adrenalina, amiodaron."
+            },
+            {
+                "id" : 5,
+                "title" : "amiodaron, lidokaina."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Czy lekarz jest obowiązany powiadomić organy ścigania o stwierdzonej w trakcie badania lekarskiego próbie zabicia człowieka?",
+        "category" : "Bioetyka i prawo medyczne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "lekarz nigdy nie posiada takiego obowiązku."
+            },
+            {
+                "id" : 2,
+                "title" : "denuncjacja pacjenta ma charakter fakultatywny, a nie obligatoryjny"
+            },
+            {
+                "id" : 3,
+                "title" : "lekarz w podobnej sytuacji ma obowiązek powiadomić izbę lekarską."
+            },
+            {
+                "id" : 4,
+                "title" : "prawo nie odnosi się do podobnych kwestii."
+            },
+            {
+                "id" : 5,
+                "title" : "lekarz ma obowiązek podjąć takie działania, gdyż dotyczą one czynu zabronionego, o którym wypowiada się art. 240 § 1. Kodeksu karnego."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Czy lekarz może nie podjąć się lub odstąpić od leczenia chorego?",
+        "category" : "Bioetyka i prawo medyczne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "tak, ale w wyjątkowych przypadkach i musi w tej sytuacji powiadomić chorego o możliwości skorzystania z pomocy w innym miejscu."
+            },
+            {
+                "id" : 2,
+                "title" : "nie, lekarz zawsze ma obowiązek udzielić choremu pomocy."
+            },
+            {
+                "id" : 3,
+                "title" : "tak, za zgodą ordynatora."
+            },
+            {
+                "id" : 4,
+                "title" : "tak, za zgodą dyrektora szpitala."
+            },
+            {
+                "id" : 5,
+                "title" : "przepisy nie regulują tej kwestii."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Nadzór nad zgodnością działań ZUS z obowiązującymi przepisami sprawuje:",
+        "category" : "Orzecnictwo",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "Minister Zdrowia."
+            },
+            {
+                "id" : 2,
+                "title" : "Minister właściwy do spraw zabezpieczenia społecznego."
+            },
+            {
+                "id" : 3,
+                "title" : "Prezes Rady Ministrów."
+            },
+            {
+                "id" : 4,
+                "title" : "Rada Nadzorcza ZUS."
+            },
+            {
+                "id" : 5,
+                "title" : "Prezes ZUS."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Obowiązkowo ubezpieczeniu wypadkowemu podlegają:",
+        "category" : "Orzecnictwo",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "pracownicy."
+            },
+            {
+                "id" : 2,
+                "title" : "bezrobotni pobierający zasiłek dla bezrobotnych."
+            },
+            {
+                "id" : 3,
+                "title" : "bezrobotni pobierający świadczenie integracyjne."
+            },
+            {
+                "id" : 4,
+                "title" : "posłowie do Parlamentu Europejskiego."
+            },
+            {
+                "id" : 5,
+                "title" : "członkowie Rady Europy."
+            }
+        ]
+    },
+    
+    {
+        "question" : "W analizie użyteczności kosztów (porównanie dwóch interwencji, które mają różne efekty zdrowotne) najczęściej używaną miarą do porównania efektu zdrowotnego jest:",
+        "category" : "Zdrowie publiczne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "śmiertelność."
+            },
+            {
+                "id" : 2,
+                "title" : "QALY."
+            },
+            {
+                "id" : 3,
+                "title" : "VOLY."
+            },
+            {
+                "id" : 4,
+                "title" : "DALY."
+            },
+            {
+                "id" : 5,
+                "title" : "HYE."
+            }
+        ]
+    },
+    
+    {
+        "question" : "Według szacunków World Health Organization zakażenia związane z opieką zdrowotną odnotowuje się przeciętnie u:",
+        "category" : "Zdrowie publiczne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "około 10 na 100 pacjentów hospitalizowanych."
+            },
+            {
+                "id" : 2,
+                "title" : "około 15 na 100 pacjentów hospitalizowanych."
+            },
+            {
+                "id" : 3,
+                "title" : "około 20 na 100 pacjentów hospitalizowanych."
+            },
+            {
+                "id" : 4,
+                "title" : "około 25 na 100 pacjentów hospitalizowanych."
+            },
+            {
+                "id" : 5,
+                "title" : "około 30 na 100 pacjentów hospitalizowanych."
+            }
+        ]
+    },
+    
+    {
+        "question" : "Czy lekarz może nie podjąć się lub odstąpić od leczenia chorego?",
+        "category" : "Bioetyka i prawo medyczne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "tak, ale w wyjątkowych przypadkach i musi w tej sytuacji powiadomić chorego o możliwości skorzystania z pomocy w innym miejscu."
+            },
+            {
+                "id" : 2,
+                "title" : "nie, lekarz zawsze ma obowiązek udzielić choremu pomocy."
+            },
+            {
+                "id" : 3,
+                "title" : "tak, za zgodą ordynatora."
+            },
+            {
+                "id" : 4,
+                "title" : "tak, za zgodą dyrektora szpitala."
+            },
+            {
+                "id" : 5,
+                "title" : "przepisy nie regulują tej kwestii."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Nadzór nad zgodnością działań ZUS z obowiązującymi przepisami sprawuje:",
+        "category" : "Orzecnictwo",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "Minister Zdrowia."
+            },
+            {
+                "id" : 2,
+                "title" : "Minister właściwy do spraw zabezpieczenia społecznego."
+            },
+            {
+                "id" : 3,
+                "title" : "Prezes Rady Ministrów."
+            },
+            {
+                "id" : 4,
+                "title" : "Rada Nadzorcza ZUS."
+            },
+            {
+                "id" : 5,
+                "title" : "Prezes ZUS."
+            }
+        ]
+    },
+    
+    
+    {
+        "question" : "Obowiązkowo ubezpieczeniu wypadkowemu podlegają:",
+        "category" : "Orzecnictwo",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "pracownicy."
+            },
+            {
+                "id" : 2,
+                "title" : "bezrobotni pobierający zasiłek dla bezrobotnych."
+            },
+            {
+                "id" : 3,
+                "title" : "bezrobotni pobierający świadczenie integracyjne."
+            },
+            {
+                "id" : 4,
+                "title" : "posłowie do Parlamentu Europejskiego."
+            },
+            {
+                "id" : 5,
+                "title" : "członkowie Rady Europy."
+            }
+        ]
+    },
+    
+    {
+        "question" : "W analizie użyteczności kosztów (porównanie dwóch interwencji, które mają różne efekty zdrowotne) najczęściej używaną miarą do porównania efektu zdrowotnego jest:",
+        "category" : "Zdrowie publiczne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "śmiertelność."
+            },
+            {
+                "id" : 2,
+                "title" : "QALY."
+            },
+            {
+                "id" : 3,
+                "title" : "VOLY."
+            },
+            {
+                "id" : 4,
+                "title" : "DALY."
+            },
+            {
+                "id" : 5,
+                "title" : "HYE."
+            }
+        ]
     }
     
 ]

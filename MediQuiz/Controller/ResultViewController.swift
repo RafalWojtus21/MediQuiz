@@ -2,27 +2,17 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
-    var scoreCalculation : [Int] = [] {
-        didSet {
-            calculateScore()
-        }
+    let finalScore = QuizBrain.shared.getScore()
+    private var resultView: ResultView { return view as! ResultView }
+    
+    override func loadView() {
+        view = ResultView(frame: UIScreen.main.bounds)
     }
-    var score: Int = 0
-    var totalNumberOfQuestions: Int = 0
-    var finalScore: Float = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = Constants.darkBlueColor
+        self.resultView.setupUI()
+        print(finalScore)
     }
-    
-    func calculateScore() {
-        score = scoreCalculation[0]
-        totalNumberOfQuestions = scoreCalculation[1]
-
-        finalScore = Float(score)/Float(totalNumberOfQuestions)*100
-        print("Your final score is \(finalScore) %")
-    }
-    
 }
