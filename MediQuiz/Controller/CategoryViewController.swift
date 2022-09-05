@@ -11,23 +11,22 @@ class CategoryViewController: UIViewController {
     }
     
     let realm = try! Realm()
-
+    
     var questions: Results<Question>?
     var categories: [String] = []
     var buttons: [UIButton] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //                print(Realm.Configuration.defaultConfiguration)
+        loadData()
         self.setupNavigationAttributs()
         self.categoryView.setupUI()
-        loadData()
         addButtons()
     }
     
     private func setupNavigationAttributs() {
-            navigationController?.setNavigationBarHidden(true, animated: true)
-        }
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
     
     func loadData() {
         categories = QuizBrain.shared.getCategoriesNames()
@@ -44,10 +43,11 @@ class CategoryViewController: UIViewController {
         return horizontalStackView
     }
     
-    private func createButton() -> CategoryButton {
+    private func createButton(with index: Int) -> CategoryButton {
         let button = CategoryButton()
-        button.tag = 1
-        button.addTarget(self, action: #selector(self.startQuiz(sender:)), for: .touchUpInside)
+        button.tag = index
+        button.addTarget(self, action: #selector(self.onPressStartQuiz(sender:)), for: .touchUpInside)
+        button.setTitle("\(categories[index])", for: .normal)
         return button
     }
     
@@ -59,9 +59,7 @@ class CategoryViewController: UIViewController {
             let horizontalStackView = configureHorizontalStackView()
             categoryView.categoryStackView.addArrangedSubview(horizontalStackView)
             for k in 1...numberOfColumns {
-                let button = createButton()
-                button.tag = iteration
-                button.setTitle("\(categories[iteration])", for: .normal)
+                let button = createButton(with: iteration)
                 buttons.append(button)
                 horizontalStackView.addArrangedSubview(button)
                 iteration += 1
@@ -69,16 +67,13 @@ class CategoryViewController: UIViewController {
         }
     }
     
-    @objc func startQuiz(sender: CategoryButton) {
-        QuizBrain.shared.chosenCategory = sender.currentTitle!
-        let questionVC = QuestionViewController()
-        if let questionSet = questions {
-            let passingResults = questionSet.filter("category CONTAINS[cd] %@", sender.currentTitle!)
-            QuizBrain.shared.filterQuestionsFromCategory(category: sender.currentTitle!)
-            QuizBrain.shared.drawRandomQuestions()
-            //            let passingResults = questionSet.filter({ $0.category.contains(sender.currentTitle!) })
-        }
+    @objc func onPressStartQuiz(sender: CategoryButton) {
+        let chosenCategory = sender.currentTitle!
+        QuizBrain.shared.chosenCategory = chosenCategory
+        QuizBrain.shared.filterQuestionsFromCategory(category: chosenCategory)
+        QuizBrain.shared.drawRandomQuestions()
         sender.backgroundColor = Constants.categoryButtonPressedColor
+        let questionVC = QuestionViewController()
         let delayInSeconds = 0.5
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
             sender.backgroundColor = Constants.categoryButtonColor

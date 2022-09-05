@@ -18,16 +18,18 @@ class QuestionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.tintColor = .white
+        title = QuizBrain.shared.chosenCategory
         self.questionView.setupUI()
         setupNavigationAttributes()
         configureView()
     }
     
     private func setupNavigationAttributes() {
-        navigationController?.navigationBar.tintColor = .white
+
         let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
         navigationController?.navigationBar.titleTextAttributes = textAttributes
-        title = QuizBrain.shared.chosenCategory
+        navigationItem.setHidesBackButton(true, animated: true)
     }
     
     private func configureView() {
@@ -49,7 +51,7 @@ class QuestionViewController: UIViewController {
     private func createButton(with index: Int) -> AnswerButton {
         let button = AnswerButton()
         button.tag = index
-        button.addTarget(self, action: #selector(self.chooseAnswer(sender:)), for: .touchUpInside)
+        button.addTarget(self, action: #selector(self.onPressAnswerChosen(sender:)), for: .touchUpInside)
         return button
     }
     
@@ -62,7 +64,7 @@ class QuestionViewController: UIViewController {
         }
     }
     
-    @objc func chooseAnswer(sender: AnswerButton) {
+    @objc func onPressAnswerChosen(sender: AnswerButton) {
         QuizBrain.shared.checkAnswer(buttonsArray: buttons ,index: sender.tag, button: sender)
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0) {
             self.buttons.forEach { button in

@@ -71,7 +71,6 @@ struct QuizBrain {
             for k in questionIndexes {
                 questionSet.append(passingQuestions[k])
             }
-            print(questionSet)
             return questionSet
         }
         return nil
@@ -82,7 +81,6 @@ struct QuizBrain {
             let randomInt = Int.random(in: 0...passingQuestions!.count-1)
             randomNumbers.insert(randomInt)
         }
-        print(randomNumbers)
         return randomNumbers.sorted()
     }
     

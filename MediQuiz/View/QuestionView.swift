@@ -22,25 +22,21 @@ class QuestionView: UIView {
     
     private func configureStackView() -> UIStackView {
         let stackView = UIStackView()
-        let purpleColor = UIColor(red: 120/255, green: 88/255, blue: 166/255, alpha: 1)
         stackView.axis = .vertical
         stackView.distribution = .fillEqually
         stackView.spacing = 2
-        stackView.backgroundColor = purpleColor
+        stackView.backgroundColor = Constants.backgroundPurpleColor
         return stackView
     }
     
     private func configureTitleLabel() -> UILabel {
             let label = UILabel()
-            label.font = UIFont.boldSystemFont(ofSize: 40)
+            label.font = UIFont.boldSystemFont(ofSize: 20)
             label.textAlignment = .center
-//            label.adjustsFontSizeToFitWidth = true
-            label.numberOfLines = 0
             label.adjustsFontSizeToFitWidth = true
-            label.textColor = .white
-            let labelColor = UIColor(red: 143/255, green: 227/255, blue: 207/255, alpha: 1)
+            label.numberOfLines = 0
             label.text = "Pytanie"
-            label.textColor = labelColor
+            label.textColor = Constants.mainLabelsColor
             return label
     }
     
@@ -67,6 +63,6 @@ class QuestionView: UIView {
         questionLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
         questionLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
         questionLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
-        questionLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        questionLabel.heightAnchor.constraint(equalToConstant: 100).isActive = true
     }
 }

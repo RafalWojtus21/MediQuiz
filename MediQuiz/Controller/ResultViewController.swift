@@ -11,8 +11,12 @@ class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupNavigationAttributes()
         self.resultView.setupUI()
-        print(finalScore)
     }
+    
+    private func setupNavigationAttributes() {
+        navigationItem.setHidesBackButton(true, animated: true)
+    }
+    
 }

@@ -5,27 +5,27 @@ class CategoryView: UIView {
     
     lazy var categoryStackView: UIStackView = configureStackView()
     lazy var titleLabel: UILabel = configureTitleLabel()
-        
-    override init(frame: CGRect) {
-         super.init(frame: frame)
-     }
 
-     required init?(coder aDecoder: NSCoder) {
-         fatalError("init(coder:) has not been implemented")
-     }
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     func setupUI() {
         addViews()
         addConstaints()
         self.backgroundColor = Constants.darkBlueColor
     }
+    
     private func configureStackView() -> UIStackView {
         let stackView = UIStackView()
-        let purpleColor = UIColor(red: 120/255, green: 88/255, blue: 166/255, alpha: 1)
         stackView.axis = .vertical
         stackView.distribution = .fillEqually
         stackView.spacing = 2
-        stackView.backgroundColor = purpleColor
+        stackView.backgroundColor = Constants.backgroundPurpleColor
         return stackView
     }
     
@@ -33,12 +33,10 @@ class CategoryView: UIView {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 40)
         label.textAlignment = .center
-        label.numberOfLines = 1
+        label.numberOfLines = 0
         label.adjustsFontSizeToFitWidth = true
-        label.textColor = .white
-        let labelColor = UIColor(red: 143/255, green: 227/255, blue: 207/255, alpha: 1)
         label.text = "Wybierz kategorię"
-        label.textColor = labelColor
+        label.textColor = Constants.mainLabelsColor
         return label
     }
     
@@ -65,6 +63,6 @@ class CategoryView: UIView {
         titleLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
-        titleLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        titleLabel.heightAnchor.constraint(equalToConstant: 70).isActive = true
     }
 }

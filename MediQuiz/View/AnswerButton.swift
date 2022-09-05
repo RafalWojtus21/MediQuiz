@@ -15,7 +15,7 @@ class AnswerButton: UIButton {
 
     func setupButton() {
         backgroundColor = Constants.answerButtonColor
-        titleLabel?.font = UIFont(name: "AvenirNext-DemiBoldItalic", size: 20)
+        titleLabel?.font = UIFont(name: "AvenirNext-DemiBoldItalic", size: 15)
         titleLabel?.numberOfLines = 0
         setTitleColor(Constants.answerButtonFontColor, for: .normal)
         translatesAutoresizingMaskIntoConstraints = false
