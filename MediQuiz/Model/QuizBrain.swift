@@ -42,7 +42,7 @@ class QuizBrain {
     }
     
     func resetHighlightedAnswers(buttonsArray: [UIButton], completion: @escaping () -> ()) {
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.2) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.5) {
             buttonsArray.forEach { button in
                 button.backgroundColor = Constants.answerButtonColor
                 button.setTitleColor(Constants.answerButtonFontColor, for: .normal)
@@ -64,12 +64,16 @@ class QuizBrain {
         }
     }
     
-    func getScore() -> Float {
+    func getFloatScore() -> Float {
         if questionSet.count == 0 {
             return 0
         } else {
-            return Float(currentScore)/Float(questionSet.count)
+            return Float(currentScore)/Float(questionSet.count)*100
         }
+    }
+    
+    func returnScoreString() -> String {
+        String(format: "%.2f", getFloatScore())
     }
     
     func nextQuestion() -> Bool {
@@ -96,7 +100,6 @@ class QuizBrain {
             for k in questionIndexes {
                 questionSet.append(passingQuestions[k])
             }
-//            print(questionSet)
             return questionSet
         }
         return nil
@@ -139,6 +142,6 @@ class QuizBrain {
         }
         return nil
     }
-
+    
 }
 

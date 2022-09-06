@@ -1,26 +1,32 @@
 PODS:
-  - ProgressHUD (13.6)
+  - Charts (4.0.3):
+    - Charts/Core (= 4.0.3)
+  - Charts/Core (4.0.3):
+    - SwiftAlgorithms (~> 1.0)
   - Realm (10.28.6):
     - Realm/Headers (= 10.28.6)
   - Realm/Headers (10.28.6)
   - RealmSwift (10.28.6):
     - Realm (= 10.28.6)
+  - SwiftAlgorithms (1.0.0)
 
 DEPENDENCIES:
-  - ProgressHUD
+  - Charts
   - RealmSwift
 
 SPEC REPOS:
   trunk:
-    - ProgressHUD
+    - Charts
     - Realm
     - RealmSwift
+    - SwiftAlgorithms
 
 SPEC CHECKSUMS:
-  ProgressHUD: 4bdaa0d2ddf676b23324b199f9facffb5c3a1620
+  Charts: d959d6723c8eedfdd0735dfc28cb0a71762ac4d9
   Realm: 9b12f16a14446d7d46a9e36225d0a0332a6ec739
   RealmSwift: 5927726fce21005f43b1fb57c832297a22031bfc
+  SwiftAlgorithms: 38dda4731d19027fdeee1125f973111bf3386b53
 
-PODFILE CHECKSUM: 05785f36108df6ae5d6629d8ef28a76232db7260
+PODFILE CHECKSUM: 99d421a8f69a7481da54dea33e3a458a3b7c1dc6
 
 COCOAPODS: 1.11.3

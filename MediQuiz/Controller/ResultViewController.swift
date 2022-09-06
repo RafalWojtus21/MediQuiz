@@ -2,7 +2,7 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
-    let finalScore = QuizBrain.shared.getScore()
+    let finalScore = QuizBrain.shared.getFloatScore()
     private var resultView: ResultView { return view as! ResultView }
     
     override func loadView() {

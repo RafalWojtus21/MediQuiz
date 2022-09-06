@@ -5,5 +5,5 @@ target 'MediQuiz' do
 	use_frameworks!
   # Pods for Todoey
   pod 'RealmSwift'
-  pod 'ProgressHUD'
+  pod 'Charts'
 end

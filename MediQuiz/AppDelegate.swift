@@ -24,7 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if defaults.bool(forKey: "isAppAlreadyLaunchedOnce") && defaults.integer(forKey: "questionCount") == countDataFromJson() {
             return true
         } else {
-            print("nowe")
             defaults.set(true, forKey: "isAppAlreadyLaunchedOnce")
             deleteData()
             loadDataFromJSON()
