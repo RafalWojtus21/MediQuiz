@@ -24,8 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func isAppAlreadyLaunchedOnce() {
         let defaults = UserDefaults.standard
-        if defaults.bool(forKey: Constants.UserDefaultKeys.isAppAlreadyLaunchedOnce.rawValue) && defaults.integer(forKey: Constants.UserDefaultKeys.questionCount.rawValue) == questionsCount {
-        } else {
+        if !(defaults.bool(forKey: Constants.UserDefaultKeys.isAppAlreadyLaunchedOnce.rawValue) && defaults.integer(forKey: Constants.UserDefaultKeys.questionCount.rawValue) == questionsCount) {
             defaults.set(true, forKey: Constants.UserDefaultKeys.isAppAlreadyLaunchedOnce.rawValue)
             DatabaseManager.shared.deleteData()
             loadDataFromJSON()

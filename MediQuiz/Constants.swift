@@ -19,8 +19,7 @@ struct Constants {
     
     
     enum UserDefaultKeys: String {
-       case questionCount
-        case isAppAlreadyLaunchedOnce
+       case questionCount, isAppAlreadyLaunchedOnce
     }
     
 }

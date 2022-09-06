@@ -19,8 +19,7 @@ class QuizBrain {
     var numberOfQuestions = 5
     var isQuizOver: Bool = false
     
-    private init() {
-    }
+    private init() {}
     
     //MARK: - QuestionViewController
     
@@ -43,7 +42,7 @@ class QuizBrain {
         buttonsArray.forEach { button in
             button.isEnabled = false
         }
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3.5) {
             buttonsArray.forEach { button in
                 button.backgroundColor = Constants.answerButtonColor
                 button.setTitleColor(Constants.answerButtonFontColor, for: .normal)

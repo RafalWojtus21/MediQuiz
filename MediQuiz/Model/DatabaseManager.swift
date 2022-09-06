@@ -7,6 +7,8 @@ class DatabaseManager {
     
     var questions: Results<Question>?
     
+    private init() {}
+    
     func addDatatoRealmObject(data: [QuestionModel]) {
         for object in data {
             let newQuestion = Question()
@@ -23,7 +25,7 @@ class DatabaseManager {
         }
     }
     
-    func saveDataToRealm(question: Question) {
+    private func saveDataToRealm(question: Question) {
         do {
             try realm.write {
                 realm.add(question)
