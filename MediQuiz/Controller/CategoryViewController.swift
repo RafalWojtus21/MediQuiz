@@ -13,7 +13,6 @@ class CategoryViewController: UIViewController {
     let realm = try! Realm()
     
     var categories: [String] = []
-    var buttons: [UIButton] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()

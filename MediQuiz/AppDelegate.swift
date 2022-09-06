@@ -1,5 +1,8 @@
 import UIKit
 import CoreData
+import RealmSwift
+
+let realm = try! Realm()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,65 +22,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    private func isAppAlreadyLaunchedOnce() -> Bool {
+    private func isAppAlreadyLaunchedOnce() {
         let defaults = UserDefaults.standard
-        if defaults.bool(forKey: "isAppAlreadyLaunchedOnce") && defaults.integer(forKey: "questionCount") == countDataFromJson() {
-            return true
+        if defaults.bool(forKey: Constants.UserDefaultKeys.isAppAlreadyLaunchedOnce.rawValue) && defaults.integer(forKey: Constants.UserDefaultKeys.questionCount.rawValue) == questionsCount {
         } else {
-            defaults.set(true, forKey: "isAppAlreadyLaunchedOnce")
-            deleteData()
+            defaults.set(true, forKey: Constants.UserDefaultKeys.isAppAlreadyLaunchedOnce.rawValue)
+            DatabaseManager.shared.deleteData()
             loadDataFromJSON()
         }
-        
-        return false
     }
     
-    private func countDataFromJson() -> Int {
+    private var questionsCount: Int {
         DataLoader().questionModel.count
     }
     
     func loadDataFromJSON() {
         let data = DataLoader().questionModel
-        UserDefaults.standard.set(data.count, forKey: "questionCount")
-        addDatatoRealmObject(data: data)
+        UserDefaults.standard.set(data.count, forKey: Constants.UserDefaultKeys.questionCount.rawValue)
+        DatabaseManager.shared.addDatatoRealmObject(data: data)
     }
-    
-    private func addDatatoRealmObject(data: [QuestionModel]) {
-        for object in data {
-            let newQuestion = Question()
-            newQuestion.question = object.question
-            newQuestion.category = object.category
-            newQuestion.correct_answer_id = object.correct_answer_id
-            for answers in object.answers {
-                let newAnswer = Answer()
-                newAnswer.title = answers.title
-                newAnswer.id = answers.id
-                newQuestion.answers.append(newAnswer)
-            }
-            self.saveDataToRealm(question: newQuestion)
-        }
-    }
-    
-    private func saveDataToRealm(question: Question) {
-        do {
-            try realm.write {
-                realm.add(question)
-            }
-        } catch {
-            print("Error saving question \(error)")
-        }
-    }
-    
-    private func deleteData() {
-        do {
-            try realm.write {
-                realm.deleteAll()
-            }
-        } catch {
-            print("Error deleting data from Realm")
-        }
-    }
-
 
     // MARK: - Core Data stack
 

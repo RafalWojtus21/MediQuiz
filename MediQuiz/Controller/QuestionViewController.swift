@@ -57,13 +57,17 @@ class QuestionViewController: UIViewController {
             let resultVC = ResultViewController()
             self.navigationController?.pushViewController(resultVC, animated: true)
         } else {
+            buttons.forEach { button in
+                button.isEnabled = true
+            }
             self.updateQuestionData()
         }
     }
     
     @objc func onPressAnswerChosen(sender: AnswerButton) {
         QuizBrain.shared.checkAnswer(buttonsArray: buttons ,index: sender.tag, button: sender)
-        QuizBrain.shared.resetHighlightedAnswers(buttonsArray: self.buttons) { [self] in
+        QuizBrain.shared.resetHighlightedAnswers(buttonsArray: self.buttons) { [weak self] in
+            guard let self = self else { return }
             QuizBrain.shared.nextQuestion()
             self.updateUI()
         }

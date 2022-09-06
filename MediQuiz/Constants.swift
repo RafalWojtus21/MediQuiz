@@ -16,4 +16,11 @@ struct Constants {
     static let hexWrongAnswersColor = 0xF77E21
     static let backToCategoriesButtonColor = UIColor(red: 20/255, green: 30/255, blue: 150/255, alpha: 1)
     static let backToCategoriesButtonFontColor = UIColor(red: 200/255, green: 200/255, blue: 200/255, alpha: 1)
+    
+    
+    enum UserDefaultKeys: String {
+       case questionCount
+        case isAppAlreadyLaunchedOnce
+    }
+    
 }

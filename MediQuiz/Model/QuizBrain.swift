@@ -1,8 +1,6 @@
 import Foundation
 import RealmSwift
 
-let realm = try! Realm()
-
 class QuizBrain {
     
     static let shared = QuizBrain()
@@ -42,7 +40,10 @@ class QuizBrain {
     }
     
     func resetHighlightedAnswers(buttonsArray: [UIButton], completion: @escaping () -> ()) {
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.5) {
+        buttonsArray.forEach { button in
+            button.isEnabled = false
+        }
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5) {
             buttonsArray.forEach { button in
                 button.backgroundColor = Constants.answerButtonColor
                 button.setTitleColor(Constants.answerButtonFontColor, for: .normal)
@@ -56,20 +57,15 @@ class QuizBrain {
         questionNumber = 0
         currentScore = 0
     }
+    
     func getProgress() -> Float {
-        if questionSet.count == 0 {
-            return 0
-        } else {
-            return Float(questionNumber+1)/Float(questionSet.count)
-        }
+        guard questionSet.count != 0 else { return 0 }
+        return Float(questionNumber+1)/Float(questionSet.count)
     }
     
     func getFloatScore() -> Float {
-        if questionSet.count == 0 {
-            return 0
-        } else {
-            return Float(currentScore)/Float(questionSet.count)*100
-        }
+        guard questionSet.count != 0 else { return 0 }
+        return Float(currentScore)/Float(questionSet.count)*100
     }
     
     func returnScoreString() -> String {
@@ -113,35 +109,16 @@ class QuizBrain {
         return Array(randomNumbers)
     }
     
-    func assignQuestionToLabel(label: UILabel) {
-        label.text = questionSet[questionNumber].question
-    }
-    
-    func assignAnswersToButtons(buttonsArray: [UIButton]) {
-        for button in buttonsArray {
-            button.setTitle("\(questionSet[questionNumber].answers[button.tag].title)", for: .normal)
-        }
-    }
-    
     //MARK: - CategoryViewController
     
     func getCategoriesNames() -> [String] {
-        if let objects = readData() {
+        if let objects = DatabaseManager.shared.readData() {
             for question in objects {
                 categoriesArray.append(question.category)
             }
             categories = Array(Set(categoriesArray))
         }
         return categories.sorted()
-    }
-    
-    private func readData() -> Results<Question>? {
-        questions = realm.objects(Question.self)
-        if let questions = questions {
-            return questions
-        }
-        return nil
-    }
-    
+    }   
 }
 
