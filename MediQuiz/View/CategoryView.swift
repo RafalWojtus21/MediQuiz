@@ -1,4 +1,3 @@
-import Foundation
 import UIKit
 
 class CategoryView: UIView {
@@ -6,6 +5,8 @@ class CategoryView: UIView {
     lazy var categoryStackView: UIStackView = configureStackView()
     lazy var titleLabel: UILabel = configureTitleLabel()
 
+    var buttons: [UIButton] = []
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -18,6 +19,30 @@ class CategoryView: UIView {
         addViews()
         addConstaints()
         self.backgroundColor = Constants.darkBlueColor
+    }
+    
+    func configureHorizontalStackView() -> UIStackView {
+        let horizontalStackView = UIStackView()
+        let purpleColor = UIColor(red: 120/255, green: 88/255, blue: 166/255, alpha: 1)
+        horizontalStackView.backgroundColor = purpleColor
+        horizontalStackView.axis = .horizontal
+        horizontalStackView.spacing = 2
+        horizontalStackView.distribution = .fillEqually
+        return horizontalStackView
+    }
+        
+    private func addButtons() {
+        let numberOfRows = 5
+        let numberOfColumns = 2
+        for _ in 1...numberOfRows {
+            let horizontalStackView = configureHorizontalStackView()
+            categoryStackView.addArrangedSubview(horizontalStackView)
+            for _ in 1...numberOfColumns {
+                let button = CategoryButton()
+                buttons.append(button)
+                horizontalStackView.addArrangedSubview(button)
+            }
+        }
     }
     
     private func configureStackView() -> UIStackView {
@@ -43,6 +68,7 @@ class CategoryView: UIView {
     private func addViews() {
         addSubview(categoryStackView)
         addSubview(titleLabel)
+        addButtons()
     }
     
     private func addConstaints() {

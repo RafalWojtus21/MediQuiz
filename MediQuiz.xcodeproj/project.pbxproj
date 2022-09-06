@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8E78F04B28B6536E0030E5AA /* AnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78F04A28B6536E0030E5AA /* AnswerButton.swift */; };
+		8E81ECBA28C6B9E200697A2A /* CircleResultBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E81ECB928C6B9E200697A2A /* CircleResultBar.swift */; };
 		8E90256728B4DECD0020D5A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E90256628B4DECD0020D5A1 /* AppDelegate.swift */; };
 		8E90256B28B4DECD0020D5A1 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E90256A28B4DECD0020D5A1 /* CategoryViewController.swift */; };
 		8E90257328B4DED40020D5A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E90257228B4DED40020D5A1 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		16ADBE5464D83BB20F5B8227 /* Pods-MediQuiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediQuiz.debug.xcconfig"; path = "Target Support Files/Pods-MediQuiz/Pods-MediQuiz.debug.xcconfig"; sourceTree = "<group>"; };
 		8E78F04A28B6536E0030E5AA /* AnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerButton.swift; sourceTree = "<group>"; };
+		8E81ECB928C6B9E200697A2A /* CircleResultBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleResultBar.swift; sourceTree = "<group>"; };
 		8E90256328B4DECD0020D5A1 /* MediQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E90256628B4DECD0020D5A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E90256A28B4DECD0020D5A1 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				8E90259028B55ADF0020D5A1 /* QuestionView.swift */,
 				8E78F04A28B6536E0030E5AA /* AnswerButton.swift */,
 				8E990CD828BD2E0800A7FCB9 /* ResultView.swift */,
+				8E81ECB928C6B9E200697A2A /* CircleResultBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				8E90256B28B4DECD0020D5A1 /* CategoryViewController.swift in Sources */,
 				8E99FB5E28B8C91D000B35D1 /* Question.swift in Sources */,
 				8EB4DA1328B7F2FA009B2563 /* QuestionModel.swift in Sources */,
+				8E81ECBA28C6B9E200697A2A /* CircleResultBar.swift in Sources */,
 				8E90258F28B55A970020D5A1 /* CategoryView.swift in Sources */,
 				8E90256728B4DECD0020D5A1 /* AppDelegate.swift in Sources */,
 				8E90258828B552030020D5A1 /* CategoryButton.swift in Sources */,

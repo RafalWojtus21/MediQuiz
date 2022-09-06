@@ -1,4 +1,5 @@
 PODS:
+  - ProgressHUD (13.6)
   - Realm (10.28.6):
     - Realm/Headers (= 10.28.6)
   - Realm/Headers (10.28.6)
@@ -6,17 +7,20 @@ PODS:
     - Realm (= 10.28.6)
 
 DEPENDENCIES:
+  - ProgressHUD
   - RealmSwift
 
 SPEC REPOS:
   trunk:
+    - ProgressHUD
     - Realm
     - RealmSwift
 
 SPEC CHECKSUMS:
+  ProgressHUD: 4bdaa0d2ddf676b23324b199f9facffb5c3a1620
   Realm: 9b12f16a14446d7d46a9e36225d0a0332a6ec739
   RealmSwift: 5927726fce21005f43b1fb57c832297a22031bfc
 
-PODFILE CHECKSUM: 9ded6fe01cafd61903d3348047920e41c23a310e
+PODFILE CHECKSUM: 05785f36108df6ae5d6629d8ef28a76232db7260
 
 COCOAPODS: 1.11.3

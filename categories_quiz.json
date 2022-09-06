@@ -2,7 +2,7 @@
     {
         "question" : " Kobieta lat 52, przyjmuje doustne preparaty żelaza z powodu nieznacznej niedokrwistości   mikrocytarnej - zgłasza obfite miesiączki. Dodatkowo lekarz zalecił wykonanie trzykrotne testu gwajakolowego na obecność krwi utajonej w kale - wyniki dodatnie. U tej pacjentki należy w pierwszej kolejności:",
         "category" : "Choroby wewnętrzne",
-        "correct_answer_id" : 1,
+        "correct_answer_id" : 3,
         "answers" : [
             {
                 "id" : 1,
@@ -31,7 +31,7 @@
     {
         "question" : "Obniżone stężenie żelaza w surowicy stwierdza się:",
         "category" : "Choroby wewnętrzne",
-        "correct_answer_id" : 1,
+        "correct_answer_id" : 2,
         "answers" : [
             {
                 "id" : 1,
@@ -577,7 +577,7 @@
     {
         "question" : " Kobieta lat 52, przyjmuje doustne preparaty żelaza z powodu nieznacznej niedokrwistości   mikrocytarnej - zgłasza obfite miesiączki. Dodatkowo lekarz zalecił wykonanie trzykrotne testu gwajakolowego na obecność krwi utajonej w kale - wyniki dodatnie. U tej pacjentki należy w pierwszej kolejności:",
         "category" : "Choroby wewnętrzne",
-        "correct_answer_id" : 1,
+        "correct_answer_id" : 3,
         "answers" : [
             {
                 "id" : 1,
@@ -606,7 +606,7 @@
     {
         "question" : "Obniżone stężenie żelaza w surowicy stwierdza się:",
         "category" : "Choroby wewnętrzne",
-        "correct_answer_id" : 1,
+        "correct_answer_id" : 4,
         "answers" : [
             {
                 "id" : 1,
@@ -1152,7 +1152,7 @@
     {
         "question" : " Kobieta lat 52, przyjmuje doustne preparaty żelaza z powodu nieznacznej niedokrwistości   mikrocytarnej - zgłasza obfite miesiączki. Dodatkowo lekarz zalecił wykonanie trzykrotne testu gwajakolowego na obecność krwi utajonej w kale - wyniki dodatnie. U tej pacjentki należy w pierwszej kolejności:",
         "category" : "Choroby wewnętrzne",
-        "correct_answer_id" : 1,
+        "correct_answer_id" : 3,
         "answers" : [
             {
                 "id" : 1,
@@ -1181,7 +1181,7 @@
     {
         "question" : "Obniżone stężenie żelaza w surowicy stwierdza się:",
         "category" : "Choroby wewnętrzne",
-        "correct_answer_id" : 1,
+        "correct_answer_id" : 0,
         "answers" : [
             {
                 "id" : 1,
@@ -1727,7 +1727,7 @@
     {
         "question" : " Kobieta lat 52, przyjmuje doustne preparaty żelaza z powodu nieznacznej niedokrwistości   mikrocytarnej - zgłasza obfite miesiączki. Dodatkowo lekarz zalecił wykonanie trzykrotne testu gwajakolowego na obecność krwi utajonej w kale - wyniki dodatnie. U tej pacjentki należy w pierwszej kolejności:",
         "category" : "Choroby wewnętrzne",
-        "correct_answer_id" : 1,
+        "correct_answer_id" : 4,
         "answers" : [
             {
                 "id" : 1,
@@ -1756,7 +1756,7 @@
     {
         "question" : "Obniżone stężenie żelaza w surowicy stwierdza się:",
         "category" : "Choroby wewnętrzne",
-        "correct_answer_id" : 1,
+        "correct_answer_id" : 2,
         "answers" : [
             {
                 "id" : 1,
@@ -2302,7 +2302,7 @@
     {
         "question" : " Kobieta lat 52, przyjmuje doustne preparaty żelaza z powodu nieznacznej niedokrwistości   mikrocytarnej - zgłasza obfite miesiączki. Dodatkowo lekarz zalecił wykonanie trzykrotne testu gwajakolowego na obecność krwi utajonej w kale - wyniki dodatnie. U tej pacjentki należy w pierwszej kolejności:",
         "category" : "Choroby wewnętrzne",
-        "correct_answer_id" : 1,
+        "correct_answer_id" : 0,
         "answers" : [
             {
                 "id" : 1,
@@ -2331,7 +2331,7 @@
     {
         "question" : "Obniżone stężenie żelaza w surowicy stwierdza się:",
         "category" : "Choroby wewnętrzne",
-        "correct_answer_id" : 1,
+        "correct_answer_id" : 0,
         "answers" : [
             {
                 "id" : 1,
@@ -2956,6 +2956,34 @@
             {
                 "id" : 5,
                 "title" : "członkowie Rady Europy."
+            }
+        ]
+    },
+    
+    {
+        "question" : "W analizie użyteczności kosztów (porównanie dwóch interwencji, które mają różne efekty zdrowotne) najczęściej używaną miarą do porównania efektu zdrowotnego jest:",
+        "category" : "Zdrowie publiczne",
+        "correct_answer_id" : 1,
+        "answers" : [
+            {
+                "id" : 1,
+                "title" : "śmiertelność."
+            },
+            {
+                "id" : 2,
+                "title" : "QALY."
+            },
+            {
+                "id" : 3,
+                "title" : "VOLY."
+            },
+            {
+                "id" : 4,
+                "title" : "DALY."
+            },
+            {
+                "id" : 5,
+                "title" : "HYE."
             }
         ]
     },

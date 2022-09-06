@@ -1,12 +1,11 @@
-import Foundation
 import UIKit
+import ProgressHUD
+import RealmSwift
 
 class ResultView: UIView {
     
     lazy var resultStackView: UIStackView = configureStackView()
     lazy var titleLabel: UILabel = configureTitleLabel()
-    lazy var progressBar: CAShapeLayer = configureCircularProgressBar(view: topStackView)
-    lazy var backgroundCircle: CAShapeLayer = configureBackgroundCircle(view: topStackView)
     let darkBlueColor = Constants.darkBlueColor
     var finalScore = QuizBrain.shared.getScore() * 100
     
@@ -19,12 +18,12 @@ class ResultView: UIView {
     public var pushCategoriesVC: ((_ sender: UIButton?) -> Void)?
     
     override init(frame: CGRect) {
-         super.init(frame: frame)
-     }
-
-     required init?(coder aDecoder: NSCoder) {
-         fatalError("init(coder:) has not been implemented")
-     }
+        super.init(frame: frame)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     func setupUI() {
         addViews()
@@ -32,80 +31,28 @@ class ResultView: UIView {
         self.backgroundColor = Constants.darkBlueColor
     }
     
-    func configureCircularPath(score: Float) -> UIBezierPath {
-        let path = UIBezierPath(arcCenter: center, radius: 100, startAngle: -CGFloat.pi/2, endAngle: 2 * CGFloat.pi * CGFloat(score), clockwise: true)
-        return path
-    }
-    
-    func configureBackgroundCircle(view: UIStackView) -> CAShapeLayer {
-        let path = UIBezierPath(arcCenter: center, radius: 100, startAngle: -CGFloat.pi/2, endAngle: 2 * CGFloat.pi, clockwise: true)
-        let trackLayer = CAShapeLayer()
-        let center = view.center
-        trackLayer.path = path.cgPath
-        trackLayer.strokeColor = UIColor.darkGray.cgColor
-        trackLayer.lineWidth = 10
-        trackLayer.fillColor = UIColor.clear.cgColor
-        return trackLayer
-    }
-    
-    func configureCircularProgressBar(view: UIStackView) -> CAShapeLayer {
-        let shapeLayer = CAShapeLayer()
-        let path = UIBezierPath(arcCenter: center, radius: 100, startAngle: -CGFloat.pi/2, endAngle: -CGFloat.pi/2 + (2 * CGFloat.pi * CGFloat(QuizBrain.shared.getScore())), clockwise: true)
-        let center = view.center
-        
-        shapeLayer.path = path.cgPath
-        shapeLayer.lineWidth = 10
-        shapeLayer.strokeEnd = 0
-        shapeLayer.fillColor = UIColor.clear.cgColor
-        shapeLayer.lineCap = .round
-        
-        switch finalScore {
-        case 0..<40:
-            shapeLayer.strokeColor = UIColor.red.cgColor
-        case 40..<60:
-            shapeLayer.strokeColor = UIColor.orange.cgColor
-        case 60..<80:
-            shapeLayer.strokeColor = UIColor.yellow.cgColor
-        case 80...100:
-            shapeLayer.strokeColor = UIColor.green.cgColor
-        default:
-            shapeLayer.strokeColor = UIColor.gray.cgColor
-        }
-        
-        let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
-        basicAnimation.toValue = 1
-        basicAnimation.duration = 2
-        basicAnimation.isRemovedOnCompletion = false
-        basicAnimation.fillMode = .forwards
-        shapeLayer.add(basicAnimation, forKey: "urSoBasic")
-        return shapeLayer
-    }
-    
     private func configureStackView() -> UIStackView {
         let stackView = UIStackView()
         stackView.axis = .vertical
-        stackView.distribution = .fillEqually
+        stackView.distribution = .fillProportionally
         stackView.spacing = 2
         stackView.backgroundColor = .clear
         return stackView
     }
     
-    private lazy var bottomStackView: UIStackView = {
-        let stackView = UIStackView()
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.axis = .vertical
-        stackView.distribution = .fillEqually
-        stackView.spacing = topPadding
-        return stackView
+    private lazy var showProgressView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .gray
+        return view
     }()
     
-    private lazy var topStackView: UIStackView = {
-        let stackView = UIStackView()
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.axis = .vertical
-        stackView.distribution = .fillEqually
-        stackView.spacing = topPadding
-        return stackView
+    private lazy var progressBar: UIProgressView = {
+        let progressView = UIProgressView(progressViewStyle: .bar)
+        progressView.trackTintColor = .red
+        progressView.progressTintColor = .blue
+        progressView.setProgress(0.5, animated: true)
+        return progressView
     }()
     
     private func configureTitleLabel() -> UILabel {
@@ -120,53 +67,67 @@ class ResultView: UIView {
         return label
     }
     
-    private lazy var backToCategoriesButton: UIButton = {
+    lazy var backToCategoriesButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("BACK BUTTON", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-        button.backgroundColor = .purple
-        button.addTarget(self, action: #selector(onPressBacktoCategories), for: .touchUpInside)
+        button.setTitle("Spróbuj ponownie", for: .normal)
+        button.setTitleColor(Constants.categoryButtonColor, for: .normal)
+        button.titleLabel?.font = UIFont(name: Constants.fontName, size: 30)
+        button.titleLabel?.font = .boldSystemFont(ofSize: 30)
+        button.backgroundColor = .systemMint
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.layer.cornerRadius = 30
         return button
     }()
     
-    @objc private func onPressBacktoCategories(_ sender: UIButton) {
-        pushCategoriesVC?(sender)
-        self.window?.rootViewController?.dismiss(animated: true, completion: nil)
-        print("button pressed")
-    }
-    
     private func addViews() {
         addSubview(titleLabel)
-        addSubview(resultStackView)
-        resultStackView.layer.addSublayer(backgroundCircle)
-        resultStackView.layer.addSublayer(progressBar)
-//        topStackView.layer.addSublayer(backgroundCircle)
-//        topStackView.layer.addSublayer(progressBar)
-//        resultStackView.addArrangedSubview(topStackView)
-//        resultStackView.addArrangedSubview(bottomStackView)
-//        bottomStackView.addArrangedSubview(backToCategoriesButton)
+        addSubview(backToCategoriesButton)
+        addSubview(showProgressView)
+        showProgressView.addSubview(progressBar)
     }
     
     private func addConstaints() {
         layoutTitleLabel()
-        layoutResultStackView()
+        layoutBackButton()
+        layoutProgressView()
+        layoutProgressBar()
     }
     
+    private func layoutProgressView() {
+        showProgressView.translatesAutoresizingMaskIntoConstraints = false
+        showProgressView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 50).isActive = true
+        showProgressView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 50).isActive = true
+        showProgressView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -50).isActive = true
+        showProgressView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+    }
+    
+    
+    private func layoutProgressBar() {
+        progressBar.frame = CGRect(x: showProgressView.frame.minX, y: showProgressView.frame.size.height/2 , width: 100, height: 30)
+    }
+    
+    private func layoutBackButton() {
+        backToCategoriesButton.translatesAutoresizingMaskIntoConstraints = false
+        backToCategoriesButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -50).isActive = true
+        backToCategoriesButton.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -50).isActive = true
+        backToCategoriesButton.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 50).isActive = true
+        backToCategoriesButton.heightAnchor.constraint(equalToConstant: 100).isActive = true    }
+    
     private func layoutResultStackView() {
+        resultStackView.backgroundColor = .yellow
         resultStackView.translatesAutoresizingMaskIntoConstraints = false
-        resultStackView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 10).isActive = true
+        resultStackView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 50).isActive = true
         resultStackView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -5).isActive = true
         resultStackView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 5).isActive = true
         resultStackView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -100).isActive = true
-//        resultStackView.heightAnchor.constraint(equalToConstant: 10).isActive = true
+        //        resultStackView.heightAnchor.constraint(equalToConstant: 100).isActive = true
     }
     
     private func layoutTitleLabel() {
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 100).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
-        titleLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        titleLabel.heightAnchor.constraint(equalToConstant: 60).isActive = true
     }
 }
