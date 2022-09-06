@@ -39,14 +39,13 @@ class ResultView: UIView {
         return stackView
     }
     
-    
     private func configureTitleLabel() -> UILabel {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 40)
         label.textAlignment = .center
         label.numberOfLines = 0
         label.adjustsFontSizeToFitWidth = true
-        label.text = "Twój wynik to \(QuizBrain.shared.returnScoreString())% "
+        label.text = "Odpowiedziałeś poprawnie na" + "\n" + "\(QuizBrain.shared.returnScoreString()) pytań!"
         label.textColor = Constants.mainLabelsColor
         return label
     }
@@ -90,7 +89,6 @@ class ResultView: UIView {
         resultStackView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -5).isActive = true
         resultStackView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 5).isActive = true
         resultStackView.bottomAnchor.constraint(equalTo: backToCategoriesButton.topAnchor, constant: -20).isActive = true
-        //        resultStackView.heightAnchor.constraint(equalToConstant: 100).isActive = true
     }
     
     private func layoutTitleLabel() {
@@ -98,6 +96,6 @@ class ResultView: UIView {
         titleLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
-        titleLabel.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        titleLabel.heightAnchor.constraint(equalToConstant: 80).isActive = true
     }
 }

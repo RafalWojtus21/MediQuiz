@@ -83,5 +83,4 @@ class QuestionView: UIView {
         questionLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
         questionLabel.heightAnchor.constraint(equalToConstant: 100).isActive = true
     }
-    
 }

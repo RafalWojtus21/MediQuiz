@@ -4,7 +4,7 @@ class CategoryView: UIView {
     
     lazy var categoryStackView: UIStackView = configureStackView()
     lazy var titleLabel: UILabel = configureTitleLabel()
-
+    
     var buttons: [UIButton] = []
     
     override init(frame: CGRect) {
@@ -30,7 +30,7 @@ class CategoryView: UIView {
         horizontalStackView.distribution = .fillEqually
         return horizontalStackView
     }
-        
+    
     private func addButtons() {
         let numberOfRows = 5
         let numberOfColumns = 2

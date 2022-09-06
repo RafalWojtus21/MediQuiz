@@ -73,7 +73,7 @@ class QuizBrain {
     }
     
     func returnScoreString() -> String {
-        String(format: "%.2f", getFloatScore())
+        "\(currentScore) z \(numberOfQuestions)"
     }
     
     func nextQuestion() -> Bool {
