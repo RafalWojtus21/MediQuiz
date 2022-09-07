@@ -37,7 +37,6 @@ class QuestionView: UIView {
         label.textAlignment = .center
         label.adjustsFontSizeToFitWidth = true
         label.numberOfLines = 0
-        label.text = "Pytanie"
         label.textColor = Constants.mainLabelsColor
         return label
     }

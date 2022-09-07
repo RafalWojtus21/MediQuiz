@@ -1,5 +1,4 @@
 import UIKit
-import SwiftUI
 import RealmSwift
 
 class QuestionViewController: UIViewController {
@@ -36,7 +35,7 @@ class QuestionViewController: UIViewController {
     private func configureAnswerButtons() {
         questionView.buttons.enumerated().forEach { index, button in
             button.addTarget(self, action: #selector(self.onPressAnswerChosen(sender:)), for: .touchUpInside)
-            button.tag = index
+            button.tag = index + 1
             buttons = questionView.buttons
         }
     }
