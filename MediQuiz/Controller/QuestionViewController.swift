@@ -65,7 +65,6 @@ class QuestionViewController: UIViewController {
     }
     
     @objc func onPressAnswerChosen(sender: AnswerButton) {
-        print(sender.tag)
         QuizBrain.shared.checkAnswer(buttonsArray: buttons ,index: sender.tag, button: sender)
         QuizBrain.shared.resetHighlightedAnswers(buttonsArray: self.buttons) { [weak self] in
             guard let self = self else { return }
