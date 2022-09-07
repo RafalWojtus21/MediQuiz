@@ -1,5 +1,4 @@
 import UIKit
-import SwiftUI
 import RealmSwift
 
 class QuestionViewController: UIViewController {
