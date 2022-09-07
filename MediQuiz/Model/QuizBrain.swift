@@ -16,7 +16,7 @@ class QuizBrain {
     var randomNumbers = Set<Int>()
     var questionNumber = 0
     var currentScore = 0
-    var numberOfQuestions = 5
+    var numberOfQuestions = 12
     var isQuizOver: Bool = false
     
     private init() {}
@@ -31,9 +31,9 @@ class QuizBrain {
             currentScore += 1
             return true
         } else {
-            buttonsArray[correctAnswerId].backgroundColor = Constants.correctAnswerButtonColor
+            buttonsArray[correctAnswerId-1].backgroundColor = Constants.correctAnswerButtonColor
             button.backgroundColor = Constants.wrongAnswerButtonColor
-            buttonsArray[correctAnswerId].setTitleColor(Constants.answerButtonCheckFontColor, for: .normal)
+            buttonsArray[correctAnswerId-1].setTitleColor(Constants.answerButtonCheckFontColor, for: .normal)
             return false
         }
     }

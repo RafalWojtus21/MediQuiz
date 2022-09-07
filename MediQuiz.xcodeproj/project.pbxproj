@@ -110,11 +110,11 @@
 				8E90258B28B556350020D5A1 /* View */,
 				8E90258A28B5562C0020D5A1 /* Controller */,
 				8E81ECCA28C78F9E00697A2A /* Extensions */,
+				8E90258C28B5590B0020D5A1 /* Constants.swift */,
+				8EB4DA1828B7FF3D009B2563 /* categories_quiz.json */,
 				8E90257728B4DED40020D5A1 /* Info.plist */,
 				8E90257228B4DED40020D5A1 /* Assets.xcassets */,
-				8E90258C28B5590B0020D5A1 /* Constants.swift */,
 				8E90257428B4DED40020D5A1 /* LaunchScreen.storyboard */,
-				8EB4DA1828B7FF3D009B2563 /* categories_quiz.json */,
 			);
 			path = MediQuiz;
 			sourceTree = "<group>";

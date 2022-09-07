@@ -12,8 +12,8 @@ struct Constants {
     static let answerButtonFontColor = UIColor.systemMint
     static let answerButtonCheckFontColor = UIColor.black
     static let fontName = "AvenirNext-DemiBoldItalic"
-    static let hexCorrectAnswersColor = 0xe5FD068
-    static let hexWrongAnswersColor = 0xF77E21
+    static let hexCorrectAnswersColor = 0x3CCF4E
+    static let hexWrongAnswersColor = 0xEF5B0C
     static let backToCategoriesButtonColor = UIColor(red: 20/255, green: 30/255, blue: 150/255, alpha: 1)
     static let backToCategoriesButtonFontColor = UIColor(red: 200/255, green: 200/255, blue: 200/255, alpha: 1)
     

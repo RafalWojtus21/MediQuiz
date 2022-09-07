@@ -36,7 +36,7 @@ class QuestionViewController: UIViewController {
     private func configureAnswerButtons() {
         questionView.buttons.enumerated().forEach { index, button in
             button.addTarget(self, action: #selector(self.onPressAnswerChosen(sender:)), for: .touchUpInside)
-            button.tag = index
+            button.tag = index + 1
             buttons = questionView.buttons
         }
     }
@@ -65,6 +65,7 @@ class QuestionViewController: UIViewController {
     }
     
     @objc func onPressAnswerChosen(sender: AnswerButton) {
+        print(sender.tag)
         QuizBrain.shared.checkAnswer(buttonsArray: buttons ,index: sender.tag, button: sender)
         QuizBrain.shared.resetHighlightedAnswers(buttonsArray: self.buttons) { [weak self] in
             guard let self = self else { return }
